@@ -8,7 +8,7 @@
   },
   "engines": {
     "npm": ">=3",
-    "node": "8.15"
+    "node": "14.x"
   },
   "author": "Icalia Labs",
   "license": "MIT",
