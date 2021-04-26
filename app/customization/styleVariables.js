@@ -1,5 +1,5 @@
 // =================================BACKGROUND=================================
-export const background = 'url("http://s3.amazonaws.com/icalialabs/assets/img/bg.png") no-repeat center center';
+export const background = 'url("https://i.ibb.co/QdTkHPn/background.jpg") no-repeat center center';
 
 // =================================COLORS=================================
 
