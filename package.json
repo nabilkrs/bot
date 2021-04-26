@@ -10,9 +10,13 @@
     "npm": ">=3",
     "node": "14.x"
   },
+  
+  "homepage": "https://github.com/nabilkrs/bot.git",
   "author": "Icalia Labs",
   "license": "MIT",
   "scripts": {
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
     "heroku-postbuild": "npm run build",
     "analyze:clean": "rimraf stats.json",
     "preanalyze": "npm run analyze:clean",
