@@ -121,7 +121,7 @@ class UserInput extends React.Component { // eslint-disable-line react/prefer-st
           type="button"
           onClick={this.handlerestartConvo.bind(this)}
         >
-            Restart
+            Recommencer
           </SubmitButton>
         <SubmitButtonSmall
           refresh

@@ -19,7 +19,7 @@ export default function createRoutes(store) {
   return [
     {
       path: '/',
-      name: 'Alpha',
+      name: ' 3',
       getComponent(nextState, cb) {
         const importModules = Promise.all([
           import('containers/BotContainer/reducer'),

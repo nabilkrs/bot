@@ -13,6 +13,6 @@
     "NPM_CONFIG_PRODUCTION": {
       "description": "NPMs env",
       "generator": false
-    },
-  },
+    }
+  }
 }

@@ -16,9 +16,9 @@ export const chatBorderColor = '#eeeeee';
 
 // --- Avatars Color ---//
 
-export const userAvatar = '#529aff';
+export const userAvatar = '#fff';
 export const userAvatarTextColor = '#fff';
-export const botAvatar = primaryColor;
+export const botAvatar = '#fff';
 export const botAvatarTextColor = '#fff';
 export const botAvatarIcon = 'https://s3.amazonaws.com/icalialabs/alpha/botAvatar.png';
 
@@ -34,11 +34,11 @@ export const selectReplyTextColorOnHover = '#fff';
 
 
 // --- Trigger Button Variables ---//
-export const buttonTextColor = '#fff';
+export const buttonTextColor = '#ffffff';
 export const buttonDisabledTextColor = '#9c9c9c';
 export const buttonBGColor = primaryColor;
 export const buttonDisabledBGColor = '#bfbfbf';
-export const buttonRefreshBGColor = userAvatar;
+export const buttonRefreshBGColor = '#dc2a23';
 
 // --- Input Colors ---//
 export const inputBGColor = '#fafafa';

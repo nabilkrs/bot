@@ -12,349 +12,1249 @@ const common_greetings = /(^hello|^hllo|^hi|^hey|^hola|^sup)\b\s?.*$/i;
 const common_greetings_negative = /(?!(^hello|^hi|^hey|^hllo|^sup|^hola)\b)\w+/i;
 
 const questions = {
- 
 
 
+  // Start
   start: {
-    botPrompt: 'I\'m <strong>custimizing</strong> this boot in order to use it in my own purpose',
-    answers: [
-      {
-        nextId: 'yourName',
-      },
-    ],
-  },
-  yourName: {
-    botPrompt: 'chesmk?',
-    input: textField(),
-    answers: [
-      {
-        answer: common_greetings,
-        nextId: 'greetings_notAName',
-      },
-      {
-        answer: common_greetings_negative,
-        catchName: true,
-        nextId: 'asYouCanSee',
-      },
-    ],
-  },
-  greetings_notAName: {
-	  botPrompt: 'Hello! <strong>I\'m still learning how to talk to humans</strong>, which means my conversational range is not very wide yet... 😅',
-	  answers: [
-	    {
-	      nextId: 'greetings_whatsYourNameAgain',
-	    },
-	  ],
-  },
-  greetings_whatsYourNameAgain: {
-	  botPrompt: 'So <strong>chesmk?/strong>?',
-	  input: textField(),
-	  answers: [
-	    {
-	      answer: common_greetings,
-	      nextId: 'greetings_notAName',
-	    },
-	    {
-	      answer: common_greetings_negative,
-	      catchName: true,
-	      nextId: 'asYouCanSee',
-	    },
-	  ],
-  },
-  asYouCanSee: {
-    botPrompt: 'So <strong>@varName</strong>,wnk labes',
-    type: RTypes.TRANSFORMED_TEXT,
-    varName: 'userName',
-    answers: [
-			{ nextId: 'bagsSystem' },
-    ],
-  },
+    botPrompt: 'Bonjour Dr.',
 
-  bagsSystem: {
-    botPrompt: "ayy bara nesselk chway ase2la",
-    answers: [
-			{ nextId: 'question1' },
-    ],
-  },
-  letsTryIt: {
-    botPrompt: "ayy bara nabdou",
-    answers: [
-			{ nextId: 'question1' },
-    ],
-  },
-  //+++++++++++++ QUESTIONS AREA +++++++++++//
-  question1: {
-    botPrompt: 'sayeem?',
-    type: RTypes.TRANSFORMED_TEXT,
-    varName: 'userName',
-    input: selectField(['eh', '3azga']),
     answers: [
       {
-        answer: 'eh',
-        nextId: 'cool',
-        // sumToBags: [{ name: 'rickAndMorty', points: 3 }, { name: 'shroedingersCat', points: 2 }, { name: 'recursion', points: 1 }],
-      },
-      {
-        answer: '3azga',
-        nextId: 'hmkay',
-        // sumToBags: [{ name: 'shroedingersCat', points: 1 }, { name: 'recursion', points: 3 }],
-      },
-      
-    ],
-  },
-  cool: {
-    botPrompt: 'heyl ysr',
-    answers: [
-      {
-        nextId: 'question2',
+        nextId: 'groupeone',
       },
     ],
   },
+  // /////////////////////////
+  // Groupe 1
+  groupeone: {
 
-  hmkay: {
-    botPrompt: 'khiih 3lik',
+    botPrompt: 'j’ai une douleur du rachis',
+    input: selectField(['quel âge avez-vous ?', 'quelle est votre profession ?', 'avez-vous des antécédents familiaux de rhumatisme ?']),
+    shouldEstimateRecommendation: true,
     answers: [
       {
-        nextId: 'question2',
-      },
-    ],
-  },
-  question2: {
-    botPrompt: 'wa9teeh toftor?',
-    input: selectField(['7h', '10h', "chihemk"]),
-    answers: [
-      {
-        answer: '7h',
-        // shouldEstimateRecommendation: true,
-        nextId: 'vrai',
-        // sumToBags: [{ name: 'rickAndMorty', points: 3 }, { name: 'shroedingersCat', points: 2 }, { name: 'recursion', points: 1 }],
-      },
-      {
-        answer: '10h',
-        // shouldEstimateRecommendation: true,
-        nextId: 'faux',
-        // sumToBags: [{ name: 'shroedingersCat', points: 1 }, { name: 'recursion', points: 1 }],
-      },
-      {
-        answer: "chihemk",
-        // shouldEstimateRecommendation: true,
-        nextId: 'karrzet',
-        // sumToBags: [{ name: 'karrzet', points: 2 }],
-      },
-    ],
-  },
 
-  karrzet: {
-    botPrompt: '<strong>Game Over</strong>',
-    // type: RTypes.MEDIA,
-    finishConversation: true,
-    answers: [
-      {
-        nextId: 'check_out1',
+        answer: 'quel âge avez-vous ?',
+        nextId: 'age',
       },
-    ],
-  },
+      {
+        answer: 'quelle est votre profession ?',
+        nextId: 'profession',
+      },
+      {
+        answer: 'avez-vous des antécédents familiaux de rhumatisme ?',
+        nextId: 'antecedents',
+      },
 
-  vrai: {
-    // input: endOfConversation(),
-    botPrompt: 'rabbi yet9abll si <strong>@varName</strong>!',
-    // finishConversation: true,
-    type: RTypes.TRANSFORMED_TEXT,
-    varName: 'userName',
-    answers: [
-      {
-        nextId: 'vraimsg',
-      },
     ],
   },
+  returnerGroupe1: {
+    botPrompt: 'D\'accord',
+    input: selectField(['quel âge avez-vous ?', 'quelle est votre profession ?', 'avez-vous des antécédents familiaux de rhumatisme ?']),
 
-  vraimsg: {
-    input: endOfConversation(),
-    botPrompt: '<strong style="color:green">ijebtk s7i7a</strong>!',
-    finishConversation: true,
-    type: RTypes.TRANSFORMED_TEXT,
-    varName: 'userName',
     answers: [
       {
-        nextId: null,
+        answer: 'quel âge avez-vous ?',
+        nextId: 'age',
       },
+      {
+        answer: 'quelle est votre profession ?',
+        nextId: 'profession',
+      },
+      {
+        answer: 'avez-vous des antécédents familiaux de rhumatisme ?',
+        nextId: 'antecedents',
+      },
+
     ],
+
+
   },
+  age: {
+    botPrompt: '28 ans',
+    input: selectField(['avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?', 'où avez-vous mal ?', 'Retourner aux réponses précidents']),
+    answers: [
+      {
+        answer: 'avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?',
+        nextId: 'MICI',
+      },
+      {
+        answer: 'êtes-vous fumeur ?',
+        nextId: 'fumeur',
+      },
+      {
+        answer: 'où avez-vous mal ?',
+        nextId: 'mal',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'returnerGroupe1',
+
+      }
+
+    ],
 
 
 
 
 
-
-  faux: {
-    // input: endOfConversation(),
-    botPrompt: 'ya <strong>@varName</strong> ya khoya ech tfallem!',
-    type: RTypes.TRANSFORMED_TEXT,
-    varName: 'userName',
+  },
+  profession: {
+    botPrompt: 'Serveur',
+    input: selectField(['avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?', 'où avez-vous mal ?', 'Retourner aux réponses précidents']),
     answers: [
       {
-        nextId: 'msg',
+        answer: 'avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?',
+        nextId: 'MICI',
       },
-    ],
-  },
-  msg: {
-    input: endOfConversation(),
-    botPrompt: '<strong>ijebtk ghalta</strong>',
-    type: RTypes.TRANSFORMED_TEXT,
-    varName: 'userName',
-    answers: [
       {
-        nextId: null,
+        answer: 'êtes-vous fumeur ?',
+        nextId: 'fumeur',
       },
+      {
+        answer: 'où avez-vous mal ?',
+        nextId: 'mal',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'returnerGroupe1',
+
+      }
+
     ],
-  },
-
-
-
 
 
 
-  rickAndMorty: {
-    botPrompt: 'rabbi yet9abll si <strong>@varName</strong>!',
-    type: RTypes.TRANSFORMED_TEXT,
-    varName: 'userName',
+
+  },
+  antecedents: {
+    botPrompt: 'non',
+    input: selectField(['avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?', 'où avez-vous mal ?', 'Retourner aux réponses précidents']),
     answers: [
       {
-        nextId: null,
+        answer: 'avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?',
+        nextId: 'MICI',
       },
+      {
+        answer: 'êtes-vous fumeur ?',
+        nextId: 'fumeur',
+      },
+      {
+        answer: 'où avez-vous mal ?',
+        nextId: 'mal',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'returnerGroupe1',
+
+      }
+
     ],
+
+
+
+
   },
-  gottaGive: {
-    botPrompt: 'For demonstrative purposes I gotta give you some kind of recommendation, so...',
+
+  // Groupe 1
+  // Groupe 2//////
+  retournerGroupe2: {
+    botPrompt: 'D\'accord',
+    input: selectField(['avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?', 'où avez-vous mal ?', 'Retourner aux réponses précidents']),
     answers: [
       {
-        nextId: 'rickAndMorty2',
+        answer: 'avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?',
+        nextId: 'MICI',
       },
+      {
+        answer: 'êtes-vous fumeur ?',
+        nextId: 'fumeur',
+      },
+      {
+        answer: 'où avez-vous mal ?',
+        nextId: 'mal',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'returnerGroupe1',
+
+      }
+
     ],
+
+
+
   },
-  rickAndMorty2: {
-    botPrompt: "My best recommendation is you should go and watch something <a href='www.adultswim.com/videos/rick-and-morty/'>fun</a>!",
+
+  MICI: {
+    botPrompt: 'non',
+    input: selectField(['la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?', 'Retourner aux réponses précidents']),
     answers: [
       {
-        nextId: 'rickAndMorty3',
+        answer: 'la douleur a commencé de façon brutale ?',
+        nextId: 'brutale',
       },
+      {
+        answer: 'Depuis combien de temps avez-vous ?',
+        nextId: 'avezvous',
+      },
+      {
+        answer: 'est-ce que la douleur évolue par poussée ?',
+        nextId: 'poussee',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'retournerGroupe2',
+
+      }
+
     ],
+
+
+
+
+
   },
-  rickAndMorty3: {
-    botPrompt: 'https://media.giphy.com/media/l41lI4bYmcsPJX9Go/giphy.gif',
-    finishConversation: true,
-    type: RTypes.MEDIA,
+
+
+  fumeur: {
+    botPrompt: 'oui, je fume 1 paquet par jour depuis 10 ans',
+    input: selectField(['la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?', 'Retourner aux réponses précidents']),
     answers: [
       {
-        nextId: 'check_out1',
+
+        answer: 'la douleur a commencé de façon brutale ?',
+        nextId: 'brutale',
       },
+      {
+        answer: 'Depuis combien de temps avez-vous ?',
+        nextId: 'avezvous',
+      },
+      {
+        answer: 'est-ce que la douleur évolue par poussée ?',
+        nextId: 'poussee',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'retournerGroupe2',
+
+      }
+
     ],
+
   },
-  shroedingersCat: {
-    botPrompt: "ya <strong>@varName</strong> ya khoya ech tfallem?",
-    type: RTypes.TRANSFORMED_TEXT,
-    varName: 'userName',
+  mal: {
+    botPrompt: 'au niveau du bas du dos',
+    input: selectField(['la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?', 'Retourner aux réponses précidents']),
     answers: [
       {
-        nextId: 'shroedingersCat2',
+        answer: 'la douleur a commencé de façon brutale ?',
+        nextId: 'brutale',
       },
+      {
+        answer: 'Depuis combien de temps avez-vous ?',
+        nextId: 'avezvous',
+      },
+      {
+        answer: 'est-ce que la douleur évolue par poussée ?',
+        nextId: 'poussee',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'retournerGroupe2',
+
+      }
+
     ],
+
+
+
   },
-  shroedingersCat2: {
-    botPrompt: 'https://media.giphy.com/media/XA4cpc6YbjPO/giphy.gif',
-    type: RTypes.MEDIA,
+
+  // FIN Groupe 2//////
+  //  Groupe 3/////
+  retournerGroupe3: {
+    botPrompt: 'D\'accord',
+    input: selectField(['la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?', 'Retourner aux réponses précidents']),
     answers: [
       {
-        nextId: 'shroedingersCat3',
+        answer: 'la douleur a commencé de façon brutale ?',
+        nextId: 'brutale',
       },
+      {
+        answer: 'Depuis combien de temps avez-vous ?',
+        nextId: 'avezvous',
+      },
+      {
+        answer: 'est-ce que la douleur évolue par poussée ?',
+        nextId: 'poussee',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'retournerGroupe2',
+
+      }
+
     ],
+
+
+
   },
-  shroedingersCat3: {
-    botPrompt: "It looks like you're in a sort of <strong>quantum-superposition state</strong>. You should really go out and figure out where (and when) you are at in your life... Cheers!",
+
+
+  brutale: {
+    botPrompt: 'non, petit à petit',
+    input: selectField(['y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?', 'Retourner aux réponses précidents']),
     answers: [
       {
-        nextId: 'check_out1',
-        finishConversation: true,
+        answer: 'y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?',
+        nextId: 'lourde',
       },
+      {
+        answer: 'comment est la douleur ? à type de crampes ou de fourmillements ?',
+        nextId: 'fourmillements',
+      },
+      {
+        answer: 'pouvez vous chiffré cette douleur de 0 à 10 ?',
+        nextId: 'ten',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'retournerGroupe3',
+
+      }
+
     ],
+
+
+
+
+
   },
-  recursion: {
-    botPrompt: 'https://media.giphy.com/media/l4HnKwiJJaJQB04Zq/giphy.gif',
-    type: RTypes.MEDIA,
+  avezvous: {
+    botPrompt: 'depuis 6 mois',
+    input: selectField(['y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?', 'Retourner aux réponses précidents']),
     answers: [
       {
-        nextId: 'recursion2',
+        answer: 'y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?',
+        nextId: 'lourde',
       },
+      {
+        answer: 'comment est la douleur ? à type de crampes ou de fourmillements ?',
+        nextId: 'fourmillements',
+      },
+      {
+        answer: 'pouvez vous chiffré cette douleur de 0 à 10 ?',
+        nextId: 'ten',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'retournerGroupe3',
+
+      }
+
     ],
+
+
+
   },
-  recursion2: {
-    botPrompt: "You're really a no-nonsense kind of type, huh?",
+  poussee: {
+    botPrompt: 'oui, par poussée 2-3 mois',
+    input: selectField(['y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?', 'Retourner aux réponses précidents']),
     answers: [
       {
-        nextId: 'recursion3',
+        answer: 'y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?',
+        nextId: 'lourde',
       },
+      {
+        answer: 'comment est la douleur ? à type de crampes ou de fourmillements ?',
+        nextId: 'fourmillements',
+      },
+      {
+        answer: 'pouvez vous chiffré cette douleur de 0 à 10 ?',
+        nextId: 'ten',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'retournerGroupe3',
+
+      }
+
     ],
+
   },
-  recursion3: {
-    botPrompt: "You know what else isn't any fun <strong>@varName</strong>?",
-    type: RTypes.TRANSFORMED_TEXT,
-    varName: 'userName',
+  // Fin Groupe 3/////
+  retournerGroupe4: {
+    botPrompt: 'D\'accord',
+    input: selectField(['y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?', 'Retourner aux réponses précidents']),
     answers: [
       {
-        nextId: 'recursion4',
+        answer: 'y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?',
+        nextId: 'lourde',
       },
+      {
+        answer: 'comment est la douleur ? à type de crampes ou de fourmillements ?',
+        nextId: 'fourmillements',
+      },
+      {
+        answer: 'pouvez vous chiffré cette douleur de 0 à 10 ?',
+        nextId: 'ten',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'retournerGroupe3',
+
+      }
+
     ],
+
+
+
   },
-  recursion4: {
-    botPrompt: 'Recursion.',
-    input: selectField(['What?', 'Yes', 'No', 'Stop It']),
+
+  lourde: {
+    botPrompt: 'non',
+    input: selectField(['est ce que la douleur irradie au niveau du membre inférieur ?', 'quand sentez-vous cette douleur ?', 'vous vous sentez raide le matin ? Pendant combien de temps ?', 'Retourner aux réponses précidents']),
     answers: [
       {
-        answer: 'What?',
-        nextId: 'recursion3',
+        answer: 'est ce que la douleur irradie au niveau du membre inférieur ?',
+        nextId: 'inferieur',
       },
       {
-        answer: 'Yes',
-        nextId: 'recursion3',
+        answer: 'quand sentez-vous cette douleur ?',
+        nextId: 'douleur',
       },
       {
-        answer: 'No',
-        nextId: 'recursion3',
+        answer: 'vous vous sentez raide le matin ? Pendant combien de temps ?',
+        nextId: 'temps',
       },
       {
-        answer: 'Stop It',
-        nextId: 'sorry',
-      },
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'retournerGroupe4',
+
+      }
+
     ],
+
+
+
+
   },
-  sorry: {
-    botPrompt: 'https://media.giphy.com/media/l3Ucl5pIqSaGa82T6/giphy.gif',
-    type: RTypes.MEDIA,
-    finishConversation: true,
+  fourmillements: {
+    botPrompt: 'à type de crampes',
+    input: selectField(['est ce que la douleur irradie au niveau du membre inférieur ?', 'quand sentez-vous cette douleur ?', 'vous vous sentez raide le matin ? Pendant combien de temps ?', 'Retourner aux réponses précidents']),
     answers: [
       {
-        nextId: 'check_out1',
+        answer: 'est ce que la douleur irradie au niveau du membre inférieur ?',
+        nextId: 'inferieur',
       },
+      {
+        answer: 'quand sentez-vous cette douleur ?',
+        nextId: 'douleur',
+      },
+      {
+        answer: 'vous vous sentez raide le matin ? Pendant combien de temps ?',
+        nextId: 'temps',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'retournerGroupe4',
+
+      }
+
     ],
+
+
+
   },
-  check_out1: {
-    botPrompt: '<strong>You selected the wrong response</strong>',
+  ten: {
+    botPrompt: '6/10',
+    input: selectField(['est ce que la douleur irradie au niveau du membre inférieur ?', 'quand sentez-vous cette douleur ?', 'vous vous sentez raide le matin ? Pendant combien de temps ?', 'Retourner aux réponses précidents']),
+
     answers: [
       {
-        nextId: 'check_out2',
+        answer: 'est ce que la douleur irradie au niveau du membre inférieur ?',
+        nextId: 'inferieur',
       },
+      {
+        answer: 'quand sentez-vous cette douleur ?',
+        nextId: 'douleur',
+      },
+      {
+        answer: 'vous vous sentez raide le matin ? Pendant combien de temps ?',
+        nextId: 'temps',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'retournerGroupe4',
+
+      }
+
     ],
   },
-  check_out2: {
-    botPrompt: '<strong>Click restart to start again</strong>',
-    // type: RTypes.LINK,
-    input: endOfConversation(),
+  // Fin Groupe 4/////
+  // Groupe 5 /////
+  retournerGroupe5: {
+    botPrompt: 'D\'accord',
+    input: selectField(['est ce que la douleur irradie au niveau du membre inférieur ?', 'quand sentez-vous cette douleur ?', 'vous vous sentez raide le matin ? Pendant combien de temps ?', 'Retourner aux réponses précidents']),
     answers: [
       {
-        nextId: 'check_out2',
+        answer: 'est ce que la douleur irradie au niveau du membre inférieur ?',
+        nextId: 'inferieur',
       },
+      {
+        answer: 'quand sentez-vous cette douleur ?',
+        nextId: 'douleur',
+      },
+      {
+        answer: 'vous vous sentez raide le matin ? Pendant combien de temps ?',
+        nextId: 'temps',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'retournerGroupe4',
+
+      }
+
     ],
+
+
+
   },
+  inferieur:{
+    botPrompt: 'non',
+    input: selectField(['est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?', 'avez-vous mal au niveau des talons, surtout le matin au réveil ?', 'Retourner aux réponses précidents']),
+    answers: [
+      {
+        answer: 'est ce que cette douleur est impulsive à la toux ?',
+        nextId: 'toux',
+      },
+      {
+        answer: 'Avez-vous mal au niveau des fesses ?',
+        nextId: 'fesses',
+      },
+      {
+        answer: 'avez-vous mal au niveau des talons, surtout le matin au réveil ?',
+        nextId: 'reveil',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'retournerGroupe5',
+
+      }
+
+    ],
+
+
+
+  },
+  douleur:{
+    botPrompt: 'surtout la 2ème moitié de la nuit et elle est calmée lors de l’activité physique',
+    input: selectField(['est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?', 'avez-vous mal au niveau des talons, surtout le matin au réveil ?', 'Retourner aux réponses précidents']),
+    answers: [
+      {
+        answer: 'est ce que cette douleur est impulsive à la toux ?',
+        nextId: 'toux',
+      },
+      {
+        answer: 'Avez-vous mal au niveau des fesses ?',
+        nextId: 'fesses',
+      },
+      {
+        answer: 'avez-vous mal au niveau des talons, surtout le matin au réveil ?',
+        nextId: 'reveil',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'retournerGroupe5',
+
+      }
+
+    ],
+
+
+  },
+  temps:{
+    botPrompt: 'oui, 1h',
+    input: selectField(['est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?', 'avez-vous mal au niveau des talons, surtout le matin au réveil ?', 'Retourner aux réponses précidents']),
+    answers: [
+      {
+        answer: 'est ce que cette douleur est impulsive à la toux ?',
+        nextId: 'toux',
+      },
+      {
+        answer: 'Avez-vous mal au niveau des fesses ?',
+        nextId: 'fesses',
+      },
+      {
+        answer: 'avez-vous mal au niveau des talons, surtout le matin au réveil ?',
+        nextId: 'reveil',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'retournerGroupe5',
+
+      }
+
+    ],
+
+
+  },
+  // FIN GROUPE 5/////
+  // GROUPE 6/////
+  retournerGroupe6:{
+    botPrompt: 'D\'accord',
+    input: selectField(['est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?', 'avez-vous mal au niveau des talons, surtout le matin au réveil ?', 'Retourner aux réponses précidents']),
+    answers: [
+      {
+        answer: 'est ce que cette douleur est impulsive à la toux ?',
+        nextId: 'toux',
+      },
+      {
+        answer: 'Avez-vous mal au niveau des fesses ?',
+        nextId: 'fesses',
+      },
+      {
+        answer: 'avez-vous mal au niveau des talons, surtout le matin au réveil ?',
+        nextId: 'reveil',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'retournerGroupe5',
+
+      }
+
+    ],
+
+
+
+  },
+
+
+toux:{
+  botPrompt: 'non',
+  input: selectField(['avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?', 'Retourner aux réponses précidents']),
+    answers: [
+      {
+        answer: 'avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?',
+        nextId: 'saucisse',
+      },
+      {
+        answer: 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?',
+        nextId: 'periode',
+      },
+      {
+        answer: 'avez-vous de la fièvre ?',
+        nextId: 'fievre',
+      },
+      {
+        answer: 'Retourner aux réponses précidents',
+        nextId: 'retournerGroupe6',
+
+      }
+
+    ],
+
+
+
+
+},
+fesses:{
+  botPrompt: 'oui, des 2 côtés me réveillant la 2ème moitié de la nuit',
+  input: selectField(['avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?', 'Retourner aux réponses précidents']),
+  answers: [
+    {
+      answer: 'avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?',
+      nextId: 'saucisse',
+    },
+    {
+      answer: 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?',
+      nextId: 'periode',
+    },
+    {
+      answer: 'avez-vous de la fièvre ?',
+      nextId: 'fievre',
+    },
+    {
+      answer: 'Retourner aux réponses précidents',
+      nextId: 'retournerGroupe6',
+
+    }
+
+  ],
+
+
+},
+reveil:{
+  botPrompt: 'oui',
+  input: selectField(['avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?', 'Retourner aux réponses précidents']),
+  answers: [
+    {
+      answer: 'avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?',
+      nextId: 'saucisse',
+    },
+    {
+      answer: 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?',
+      nextId: 'periode',
+    },
+    {
+      answer: 'avez-vous de la fièvre ?',
+      nextId: 'fievre',
+    },
+    {
+      answer: 'Retourner aux réponses précidents',
+      nextId: 'retournerGroupe6',
+
+    }
+
+  ],
+
+
+},
+
+//FIN GROUPE 6 ////////
+//GROUPE 7 /////
+retournerGroupe7:{
+  botPrompt: 'D\'accord',
+  input: selectField(['avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?', 'Retourner aux réponses précidents']),
+  answers: [
+    {
+      answer: 'avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?',
+      nextId: 'saucisse',
+    },
+    {
+      answer: 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?',
+      nextId: 'periode',
+    },
+    {
+      answer: 'avez-vous de la fièvre ?',
+      nextId: 'fievre',
+    },
+    {
+      answer: 'Retourner aux réponses précidents',
+      nextId: 'retournerGroupe6',
+
+    }
+
+  ],
+
+
+
+},
+
+saucisse:{
+  botPrompt: 'oui',
+  input: selectField(['sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?', 'Retourner aux réponses précidents']),
+  answers: [
+    {
+      answer: 'sentez vous des douleurs articulaires ou musculaires associées ?',
+      nextId: 'associeesgr7',
+    },
+    {
+      answer: 'avez-vous des sueurs nocturnes ?',
+      nextId: 'nocturnesgr7',
+    },
+    {
+      answer: 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?',
+      nextId: 'debutgr7',
+    },
+    {
+      answer: 'Retourner aux réponses précidents',
+      nextId: 'retournerGroupe7',
+
+    }
+
+  ],
+
+
+
+
+},
+periode:{
+  botPrompt: 'non',
+  input: selectField(['sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?', 'Retourner aux réponses précidents']),
+  answers: [
+    {
+      answer: 'sentez vous des douleurs articulaires ou musculaires associées ?',
+      nextId: 'associeesgr7',
+    },
+    {
+      answer: 'avez-vous des sueurs nocturnes ?',
+      nextId: 'nocturnesgr7',
+    },
+    {
+      answer: 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?',
+      nextId: 'debutgr7',
+    },
+    {
+      answer: 'Retourner aux réponses précidents',
+      nextId: 'retournerGroupe7',
+
+    }
+
+  ],
+
+
+},
+fievre:{
+  botPrompt: 'non',
+  input: selectField(['sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?', 'Retourner aux réponses précidents']),
+  answers: [
+    {
+      answer: 'sentez vous des douleurs articulaires ou musculaires associées ?',
+      nextId: 'associeesgr7',
+    },
+    {
+      answer: 'avez-vous des sueurs nocturnes ?',
+      nextId: 'nocturnesgr7',
+    },
+    {
+      answer: 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?',
+      nextId: 'debutgr7',
+    },
+    {
+      answer: 'Retourner aux réponses précidents',
+      nextId: 'retournerGroupe7',
+
+    }
+
+  ],
+
+
+},
+// FIN GROUPE 7/////////
+// GROUPE 8 /////
+
+retournerGroupe8:{
+  botPrompt: 'D\'accord',
+  input: selectField(['sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?', 'Retourner aux réponses précidents']),
+  answers: [
+    {
+      answer: 'sentez vous des douleurs articulaires ou musculaires associées ?',
+      nextId: 'associeesgr7',
+    },
+    {
+      answer: 'avez-vous des sueurs nocturnes ?',
+      nextId: 'nocturnesgr7',
+    },
+    {
+      answer: 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?',
+      nextId: 'debutgr7',
+    },
+    {
+      answer: 'Retourner aux réponses précidents',
+      nextId: 'retournerGroupe7',
+
+    }
+
+  ],
+
+
+
+},
+
+
+
+
+
+
+associeesgr7:{
+botPrompt: 'non',
+input: selectField(['avez-vous des brulures mictionnels, une toux ou autres ?', 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?', 'avez-vous présenté une rougeur oculaire avec un flou visuel ?', 'Retourner aux réponses précidents']),
+answers: [
+  {
+    answer: 'avez-vous des brulures mictionnels, une toux ou autres ?',
+    nextId: 'autres8',
+  },
+  {
+    answer: 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?',
+    nextId: 'dysurie8',
+  },
+  {
+    answer: 'avez-vous présenté une rougeur oculaire avec un flou visuel ?',
+    nextId: 'visuel8',
+  },
+  {
+    answer: 'Retourner aux réponses précidents',
+    nextId: 'retournerGroupe8',
+
+  }
+
+],
+
+
+},
+nocturnesgr7:{
+botPrompt: 'non',
+input: selectField(['avez-vous des brulures mictionnels, une toux ou autres ?', 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?', 'avez-vous présenté une rougeur oculaire avec un flou visuel ?', 'Retourner aux réponses précidents']),
+answers: [
+  {
+    answer: 'avez-vous des brulures mictionnels, une toux ou autres ?',
+    nextId: 'autres8',
+  },
+  {
+    answer: 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?',
+    nextId: 'dysurie8',
+  },
+  {
+    answer: 'avez-vous présenté une rougeur oculaire avec un flou visuel ?',
+    nextId: 'visuel8',
+  },
+  {
+    answer: 'Retourner aux réponses précidents',
+    nextId: 'retournerGroupe8',
+
+  }
+
+],
+
+
+},
+debutgr7:{
+botPrompt: 'non',
+input: selectField(['avez-vous des brulures mictionnels, une toux ou autres ?', 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?', 'avez-vous présenté une rougeur oculaire avec un flou visuel ?', 'Retourner aux réponses précidents']),
+answers: [
+  {
+    answer: 'avez-vous des brulures mictionnels, une toux ou autres ?',
+    nextId: 'autres8',
+  },
+  {
+    answer: 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?',
+    nextId: 'dysurie8',
+  },
+  {
+    answer: 'avez-vous présenté une rougeur oculaire avec un flou visuel ?',
+    nextId: 'visuel8',
+  },
+  {
+    answer: 'Retourner aux réponses précidents',
+    nextId: 'retournerGroupe8',
+
+  }
+
+],
+
+
+},
+// FIN GROUPE 8
+// GROUPE 9
+retournerGroupe9:{
+  botPrompt: 'D\'accord',
+  input: selectField(['avez-vous des brulures mictionnels, une toux ou autres ?', 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?', 'avez-vous présenté une rougeur oculaire avec un flou visuel ?', 'Retourner aux réponses précidents']),
+  answers: [
+    {
+      answer: 'avez-vous des brulures mictionnels, une toux ou autres ?',
+      nextId: 'autres8',
+    },
+    {
+      answer: 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?',
+      nextId: 'dysurie8',
+    },
+    {
+      answer: 'avez-vous présenté une rougeur oculaire avec un flou visuel ?',
+      nextId: 'visuel8',
+    },
+    {
+      answer: 'Retourner aux réponses précidents',
+      nextId: 'retournerGroupe8',
+  
+    }
+  
+  ],
+
+
+
+},
+
+
+
+
+
+autres8:{
+botPrompt: 'non',
+input: selectField(['avez-vous des lésions cutanées squameuses ?', 'avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?', 'Retourner aux réponses précidents']),
+answers: [
+  {
+    answer: 'avez-vous des lésions cutanées squameuses ?',
+    nextId: 'squameuses9',
+  },
+  {
+    answer: 'avez-vous une diarrhée ?',
+    nextId: 'diarrhee9',
+  },
+  {
+    answer: 'avez-vous reçu un traitement ?',
+    nextId: 'traitement9',
+  },
+  {
+    answer: 'Retourner aux réponses précidents',
+    nextId: 'retournerGroupe9',
+
+  }
+
+],
+
+
+},
+dysurie8:{
+botPrompt: 'non',
+input: selectField(['avez-vous des lésions cutanées squameuses ?', 'avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?', 'Retourner aux réponses précidents']),
+answers: [
+  {
+    answer: 'avez-vous des lésions cutanées squameuses ?',
+    nextId: 'squameuses9',
+  },
+  {
+    answer: 'avez-vous une diarrhée ?',
+    nextId: 'diarrhee9',
+  },
+  {
+    answer: 'avez-vous reçu un traitement ?',
+    nextId: 'traitement9',
+  },
+  {
+    answer: 'Retourner aux réponses précidents',
+    nextId: 'retournerGroupe9',
+
+  }
+
+],
+
+
+},
+visuel8:{
+botPrompt: 'non',
+input: selectField(['avez-vous des lésions cutanées squameuses ?', 'avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?', 'Retourner aux réponses précidents']),
+answers: [
+  {
+    answer: 'avez-vous des lésions cutanées squameuses ?',
+    nextId: 'squameuses9',
+  },
+  {
+    answer: 'avez-vous une diarrhée ?',
+    nextId: 'diarrhee9',
+  },
+  {
+    answer: 'avez-vous reçu un traitement ?',
+    nextId: 'traitement9',
+  },
+  {
+    answer: 'Retourner aux réponses précidents',
+    nextId: 'retournerGroupe9',
+
+  }
+
+],
+
+
+},
+// FIN GROUPE 9
+// GROUPE 10
+retournerGroupe10:{
+  botPrompt: 'D\'accord',
+  input: selectField(['avez-vous des lésions cutanées squameuses ?', 'avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?', 'Retourner aux réponses précidents']),
+  answers: [
+    {
+      answer: 'avez-vous des lésions cutanées squameuses ?',
+      nextId: 'squameuses9',
+    },
+    {
+      answer: 'avez-vous une diarrhée ?',
+      nextId: 'diarrhee9',
+    },
+    {
+      answer: 'avez-vous reçu un traitement ?',
+      nextId: 'traitement9',
+    },
+    {
+      answer: 'Retourner aux réponses précidents',
+      nextId: 'retournerGroupe9',
+  
+    }
+  
+  ],
+
+
+
+},
+squameuses9:{
+botPrompt: 'non',
+input: selectField(['déficit moteur ?', 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?', 'Retourner aux réponses précidents']),
+answers: [
+  {
+    answer: 'déficit moteur ?',
+    nextId: 'moteur10',
+  },
+  {
+    answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
+    nextId: 'impuissance10',
+  },
+  {
+    answer: 'Retourner aux réponses précidents',
+    nextId: 'retournerGroupe10',
+
+  }
+
+],
+
+
+},
+diarrhee9:{
+botPrompt: 'non',
+input: selectField(['déficit moteur ?', 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?', 'Retourner aux réponses précidents']),
+answers: [
+  {
+    answer: 'déficit moteur ?',
+    nextId: 'moteur10',
+  },
+  {
+    answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
+    nextId: 'impuissance10',
+  },
+  {
+    answer: 'Retourner aux réponses précidents',
+    nextId: 'retournerGroupe10',
+
+  }
+
+],
+
+
+},
+traitement9:{
+botPrompt: 'oui, des anti stéroïdiens de synthèse, avec une nette amélioration',
+input: selectField(['déficit moteur ?', 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?', 'Retourner aux réponses précidents']),
+answers: [
+  {
+    answer: 'déficit moteur ?',
+    nextId: 'moteur10',
+  },
+  {
+    answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
+    nextId: 'impuissance10',
+  },
+  {
+    answer: 'Retourner aux réponses précidents',
+    nextId: 'retournerGroupe10',
+
+  }
+
+],
+
+
+},
+// FIN GROUPE 10
+// GROUPE 11
+moteur10:{
+botPrompt: 'non',
+input: selectField(['Vous êtes devant un tableau de lombalgies secondaires', 'Vous êtes devant un tableau de lombalgies communes']),
+answers: [
+  {
+    answer: 'Vous êtes devant un tableau de lombalgies secondaires',
+    nextId: 'secondaires11',
+  },
+  {
+    answer: 'Vous êtes devant un tableau de lombalgies communes',
+    nextId: 'communes11',
+  },
+
+],
+
+
+},
+impuissance10:{
+botPrompt: 'non',
+input: selectField(['Vous êtes devant un tableau de lombalgies secondaires', 'Vous êtes devant un tableau de lombalgies communes']),
+answers: [
+  {
+    answer: 'Vous êtes devant un tableau de lombalgies secondaires',
+    nextId: 'secondaires11',
+  },
+  {
+    answer: 'Vous êtes devant un tableau de lombalgies communes',
+    nextId: 'mauvaiseReponse',
+  },
+
+],
+
+
+},
+
+//FIN GROUPE 11 
+// QUESTION 1
+
+secondaires11:{
+  botPrompt: 'Que faire Dr ?',
+  input: selectField(['continuer le traitement', 'faire une IRM du rachis', 'examiner votre patient']),
+answers: [
+  {
+    answer: 'continuer le traitement',
+    nextId: 'mauvaiseReponse',
+  },
+  {
+    answer: 'faire une IRM du rachis',
+    nextId: 'mauvaiseReponse',
+  },
+  {
+    answer: 'examiner votre patient',
+    nextId: 'firstInPart2',
+
+  }
+
+],
+
+
+
+
+
+},
+mauvaiseReponse:{
+  input: endOfConversation(),
+  botPrompt: '<strong>vous choisissez la mauvaise réponse, vous devez répéter</strong>',
+  type: RTypes.TRANSFORMED_TEXT,
+  varName: 'userName',
+  answers: [
+    {
+      nextId: null,
+    },
+  ],
+
+
+
+
+
+},
+
+firstInPart2:{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 };
 
 
