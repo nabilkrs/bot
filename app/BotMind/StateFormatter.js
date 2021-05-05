@@ -4,7 +4,7 @@ export function defaultUserInput() {
   return {
     label: null,
     type: 'disabledFieldText',
-    placeholder: 'Please wait...',
+    placeholder: '...',
   };
 }
 
@@ -94,7 +94,7 @@ export function textField(textFieldValue){
 export function disabledFieldText(){
   const fieldTextInput = {
     type: 'disabledFieldText',
-    placeholder: 'Please wait...',
+    placeholder: '...',
   };
 
   return fieldTextInput;
