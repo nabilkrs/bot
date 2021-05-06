@@ -1358,10 +1358,10 @@ const questions = {
 
   Shober: {
     botPrompt: '2 cm',
-    input: selectField([':Distance doigts sol']),
+    input: selectField(['Distance doigts sol']),
     answers: [
       {
-        answer: ':Distance doigts sol',
+        answer: 'Distance doigts sol',
         nextId: 'tofigure3',
       },
 
