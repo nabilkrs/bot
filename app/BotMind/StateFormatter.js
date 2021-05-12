@@ -4,7 +4,7 @@ export function defaultUserInput() {
   return {
     label: null,
     type: 'disabledFieldText',
-    placeholder: 'M. Zied est en train d\'écrire',
+    placeholder: 'M. Zied est en train d\'écrire.',
   };
 }
 
@@ -94,7 +94,7 @@ export function textField(textFieldValue){
 export function disabledFieldText(){
   const fieldTextInput = {
     type: 'disabledFieldText',
-    placeholder: 'M. Zied est en train d\'écrire',
+    placeholder: 'M. Zied est en train d\'écrire.',
   };
 
   return fieldTextInput;
