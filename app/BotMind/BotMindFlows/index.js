@@ -18,7 +18,7 @@ const questions = {
   start: {
     
    
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">bonjour Dr, j’ai mal au dos</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">bonjour Dr, j’ai mal au dos</div>',
 
 
     answers: [
@@ -32,7 +32,7 @@ const questions = {
   bot1: {
 
     
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Vous voulez en savoir plus sur ….</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Vous voulez en savoir plus sur ….</div>',
     input: selectField(['Sur le terrain du patient', 'Sur les caractéristiques de la douleur', 'Sur les signes associés']),
     shouldEstimateRecommendation: true,
     answers: [
@@ -65,7 +65,7 @@ const questions = {
   groupeone: {
 
   
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
     
 
@@ -89,7 +89,7 @@ const questions = {
     ],
   },
   returnerGroupe1: {
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
     input: selectField(['quel âge avez-vous ?', 'quelle est votre profession ?', 'avez-vous des antécédents familiaux de rhumatisme ?']),
@@ -114,7 +114,7 @@ const questions = {
   },
   age: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">28 ans</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">28 ans</div>',
 
     input: selectField(['avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?', 'Retourner aux réponses précédentes']),
     answers: [
@@ -144,7 +144,7 @@ const questions = {
 
   },
   profession: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">serveur</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">serveur</div>',
     input: selectField(['avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
@@ -172,7 +172,7 @@ const questions = {
 
   },
   antecedents: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     input: selectField(['avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?', 'Retourner aux réponses précédentes']),
     answers: [
@@ -201,7 +201,7 @@ const questions = {
 
   },
   groupe2boot:{
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
       input: selectField(['où avez-vous mal ?','la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?']),
     answers: [
@@ -231,7 +231,7 @@ const questions = {
   // Groupe 1
   // Groupe 2//////
   retournerGroupe2: {
-        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+        botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -262,7 +262,7 @@ const questions = {
   },
 
   MICI: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     // input: selectField(['la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?', 'Retourner aux réponses précédentes']),
     // answers: [
@@ -300,7 +300,7 @@ const questions = {
 
   fumeur: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, je fume 1 paquet par jour depuis 10 ans</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, je fume 1 paquet par jour depuis 10 ans</div>',
 
     // input: selectField(['la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?', 'Retourner aux réponses précédentes']),
     // answers: [
@@ -333,7 +333,7 @@ const questions = {
   },
   mal: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">au niveau du bas du dos</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">au niveau du bas du dos</div>',
 
     input: selectField(['la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?', 'Retourner aux réponses précédentes']),
     answers: [
@@ -364,7 +364,7 @@ const questions = {
   // FIN Groupe 2//////
   //  Groupe 3/////
   retournerGroupe3: {
-        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+        botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -401,7 +401,7 @@ const questions = {
 
   brutale: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non, petit à petit</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non, petit à petit</div>',
 
     input: selectField(['y a-t-il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffrer cette douleur de 0 à 10 ?', 'Retourner aux réponses précédentes']),
     answers: [
@@ -432,7 +432,7 @@ const questions = {
   },
   avezvous: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">depuis 6 mois</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">depuis 6 mois</div>',
 
     input: selectField(['y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?', 'Retourner aux réponses précédentes']),
     answers: [
@@ -461,7 +461,7 @@ const questions = {
   },
   poussee: {
     
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, par poussée 2-3 mois</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, par poussée 2-3 mois</div>',
     input: selectField(['y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
@@ -487,7 +487,7 @@ const questions = {
   },
   // Fin Groupe 3/////
   retournerGroupe4: {
-        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+        botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -518,7 +518,7 @@ const questions = {
   },
 
   lourde: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     input: selectField(['est ce que la douleur irradie au niveau du membre inférieur ?', 'quand sentez-vous cette douleur ?', 'vous vous sentez raide le matin ? Pendant combien de temps ?', 'Retourner aux réponses précédentes']),
     answers: [
@@ -548,7 +548,7 @@ const questions = {
   },
   fourmillements: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">à type de crampes</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">à type de crampes</div>',
     input: selectField(['est ce que la douleur irradie au niveau du membre inférieur ?', 'quand sentez-vous cette douleur ?', 'vous vous sentez raide le matin ? Pendant combien de temps ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
@@ -576,7 +576,7 @@ const questions = {
   },
   ten: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">6/10</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">6/10</div>',
     input: selectField(['est ce que la douleur irradie au niveau du membre inférieur ?', 'quand sentez-vous cette douleur ?', 'vous vous sentez raide le matin ? Pendant combien de temps ?', 'Retourner aux réponses précédentes']),
 
     answers: [
@@ -603,7 +603,7 @@ const questions = {
   // Fin Groupe 4/////
   // Groupe 5 /////
   retournerGroupe5: {
-        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+        botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -633,7 +633,7 @@ const questions = {
 
   },
   inferieur: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     input: selectField(['est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?',  'Retourner aux réponses précédentes']),
     answers: [
@@ -662,7 +662,7 @@ const questions = {
   },
   douleur: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">surtout la 2ème moitié de la nuit et elle est calmée lors de l’activité physique</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">surtout la 2ème moitié de la nuit et elle est calmée lors de l’activité physique</div>',
     input: selectField(['est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?', 'avez-vous mal au niveau des talons, surtout le matin au réveil ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
@@ -689,7 +689,7 @@ const questions = {
   },
   temps: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, 1h</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, 1h</div>',
     // input: selectField(['est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?', 'avez-vous mal au niveau des talons, surtout le matin au réveil ?', 'Retourner aux réponses précédentes']),
     // answers: [
     //   {
@@ -720,7 +720,7 @@ const questions = {
   // FIN GROUPE 5/////
   // GROUPE 6/////
   retournerGroupe6: {
-        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+        botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -750,7 +750,7 @@ const questions = {
 
   },
   groupe3boot:{
-        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+        botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -780,7 +780,7 @@ const questions = {
 
 
   toux: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     // input: selectField(['avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?', 'Retourner aux réponses précédentes']),
     // answers: [
@@ -813,7 +813,7 @@ const questions = {
   },
   fesses: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, des 2 côtés me réveillant la 2ème moitié de la nuit</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, des 2 côtés me réveillant la 2ème moitié de la nuit</div>',
     // input: selectField(['avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?', 'Retourner aux réponses précédentes']),
     // answers: [
     //   {
@@ -842,7 +842,7 @@ const questions = {
 
   },
   reveil: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui</div>',
     input: selectField(['avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
@@ -871,7 +871,7 @@ const questions = {
   //FIN GROUPE 6 ////////
   //GROUPE 7 /////
   retournerGroupe7: {
-        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+        botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -902,7 +902,7 @@ const questions = {
   },
 
   saucisse: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui</div>',
     input: selectField(['sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
@@ -930,7 +930,7 @@ const questions = {
 
   },
   periode: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     input: selectField(['sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?', 'Retourner aux réponses précédentes']),
     answers: [
@@ -957,7 +957,7 @@ const questions = {
 
   },
   fievre: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     input: selectField(['sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?', 'Retourner aux réponses précédentes']),
     answers: [
@@ -987,7 +987,7 @@ const questions = {
   // GROUPE 8 /////
 
   retournerGroupe8: {
-        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+        botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -1023,7 +1023,7 @@ const questions = {
 
 
   associeesgr7: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     input: selectField(['avez-vous des brulures mictionnels, une toux ou autres ?', 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?', 'avez-vous présenté une rougeur oculaire avec un flou visuel ?', 'Retourner aux réponses précédentes']),
     answers: [
@@ -1050,7 +1050,7 @@ const questions = {
 
   },
   nocturnesgr7: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     input: selectField(['avez-vous des brulures mictionnels, une toux ou autres ?', 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?', 'avez-vous présenté une rougeur oculaire avec un flou visuel ?', 'Retourner aux réponses précédentes']),
     answers: [
@@ -1077,7 +1077,7 @@ const questions = {
 
   },
   debutgr7: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     input: selectField(['avez-vous des brulures mictionnels, une toux ou autres ?', 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?', 'avez-vous présenté une rougeur oculaire avec un flou visuel ?', 'Retourner aux réponses précédentes']),
     answers: [
@@ -1106,7 +1106,7 @@ const questions = {
   // FIN GROUPE 8
   // GROUPE 9
   retournerGroupe9: {
-        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+        botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -1141,7 +1141,7 @@ const questions = {
 
 
   autres8: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     input: selectField(['fuite /rétention urinaire, incontinence anale, constipation, impuissance ?', 'avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?', 'Retourner aux réponses précédentes']),
     answers: [
@@ -1171,7 +1171,7 @@ const questions = {
 
   },
   dysurie8: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     input: selectField(['fuite /rétention urinaire, incontinence anale, constipation, impuissance ?','avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?', 'Retourner aux réponses précédentes']),
     answers: [
@@ -1201,7 +1201,7 @@ const questions = {
 
   },
   visuel8: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     input: selectField(['fuite /rétention urinaire, incontinence anale, constipation, impuissance ?', 'avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?', 'Retourner aux réponses précédentes']),
     answers: [
@@ -1232,7 +1232,7 @@ const questions = {
   // FIN GROUPE 9
   // GROUPE 10
   retournerGroupe10: {
-        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+        botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -1263,7 +1263,7 @@ const questions = {
 
   },
   squameuses9: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     input: selectField(['fuite /rétention urinaire, incontinence anale, constipation, impuissance ?', 'Retourner aux réponses précédentes']),
     answers: [
@@ -1282,7 +1282,7 @@ const questions = {
 
   },
   diarrhee9: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     answers:[{
       nextId:'conclusionboot2'
@@ -1292,7 +1292,7 @@ const questions = {
   },
   traitement9: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, des anti stéroïdiens de synthèse, avec une nette amélioration</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, des anti stéroïdiens de synthèse, avec une nette amélioration</div>',
     answers:[{
       nextId:'conclusionboot2'
     }]
@@ -1308,7 +1308,7 @@ const questions = {
 
 
   moteur10: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     // input: selectField(['Vous êtes devant un tableau de lombalgies secondaires', 'Vous êtes devant un tableau de lombalgies communes']),
     // answers: [
@@ -1329,8 +1329,8 @@ const questions = {
 
   },
   backtosame:{
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
-    // botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
+    // botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
 
  
     
@@ -1345,7 +1345,7 @@ const questions = {
 
   },
   conclusionboot:{
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Que peux-tu conclure ?</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Que peux-tu conclure ?</div>',
     input: selectField(['Vous êtes devant un tableau de lombalgies secondaires', 'Vous êtes devant un tableau de lombalgies communes']),
     answers: [
       {
@@ -1374,7 +1374,7 @@ const questions = {
 
 
   conclusionboot2:{
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Que peux-tu conclure ?</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Que peux-tu conclure ?</div>',
     input: selectField(['Vous êtes devant un tableau de lombalgies secondaires', 'Vous êtes devant un tableau de lombalgies communes']),
     answers: [
       {
@@ -1401,7 +1401,7 @@ const questions = {
 
 
   impuissance10: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     answers:[{
       nextId:'conclusionboot2'
@@ -1416,7 +1416,7 @@ const questions = {
 
   secondaires11: {
     // botPrompt: 'Que faire Dr ?',
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Que faire à ce stade ?</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Que faire à ce stade ?</div>',
     input: selectField(['continuer le traitement', 'faire une IRM du rachis', 'examiner votre patient']),
     answers: [
       {
@@ -1441,7 +1441,7 @@ const questions = {
 
   },
   mauvaiseReponse1:{
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
     answers: [
       {
         nextId:'secondaires11'
@@ -1456,7 +1456,7 @@ const questions = {
 
   mauvaiseReponse: {
     input: endOfConversation(),
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
     
     type: RTypes.TRANSFORMED_TEXT,
     varName: 'userName',
@@ -1474,7 +1474,7 @@ const questions = {
   // Partie 2
 
   listInPart2: {
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Que cherchez-vous à l’examen clinique ?</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Que cherchez-vous à l’examen clinique ?</div>',
 
     input: selectField([
       'Examen du rachis lombaire',
@@ -1535,7 +1535,7 @@ const questions = {
 
   lombaire: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">effacement lordose</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">effacement lordose</div>',
     input: selectField(['Paplation']),
     answers: [
       {
@@ -1552,7 +1552,7 @@ const questions = {
 
   },
   paplation: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">épineuses lombaires douloureuses et Contracture des muscles para vertébraux</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">épineuses lombaires douloureuses et Contracture des muscles para vertébraux</div>',
 
 
     input: selectField(['signe de la sonnette']),
@@ -1569,7 +1569,7 @@ const questions = {
   },
   sonnette: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">sonnette</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">sonnette</div>',
 
     answers: [
       {
@@ -1595,7 +1595,7 @@ const questions = {
   },
   negative: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">négative</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">négative</div>',
 
     input: selectField(['Indice de Shober']),
     answers: [
@@ -1613,7 +1613,7 @@ const questions = {
 
   Shober: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">2 cm</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">2 cm</div>',
 
     input: selectField(['Distance doigts sol']),
     answers: [
@@ -1646,7 +1646,7 @@ const questions = {
   },
   sol: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">+10 cm</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">+10 cm</div>',
 
     input: selectField(['signe de lasegue']),
     answers: [
@@ -1675,7 +1675,7 @@ const questions = {
   },
   lasegue: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">100°</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">100°</div>',
 
     // input: selectField(['examen du rachis lombaire : syndrome rachidien avec raideur segmentaire et sans signe de confit disco-radiculaire']),
     // answers: [
@@ -1694,7 +1694,7 @@ const questions = {
 
   },
   conclusionexamen1:{
-    botPrompt: '<div style="height: auto;margin:-20px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">conclure : examen du rachis lombaire : syndrome rachidien avec raideur segmentaire et sans signe de confit disco-radiculaire</div>',
+    botPrompt: '<div style="height: auto;margin:-20% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">conclure : examen du rachis lombaire : syndrome rachidien avec raideur segmentaire et sans signe de confit disco-radiculaire</div>',
       answers: [
       {
         nextId: 'listInPart2',
@@ -1727,7 +1727,7 @@ const questions = {
 
   // Examen du rachis entier :
   entier: {
-        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+        botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -1747,7 +1747,7 @@ const questions = {
 
   },
   sagital: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     input: selectField(['déformation dans le plan frontal']),
     answers: [
@@ -1774,7 +1774,7 @@ const questions = {
 
   },
   frontal: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     input: selectField(['palpation']),
     answers: [
@@ -1787,7 +1787,7 @@ const questions = {
   },
   palpation: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">indolore</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">indolore</div>',
 
     input: selectField(['mobilité rachis cervical']),
     answers: [
@@ -1813,7 +1813,7 @@ const questions = {
 
   cervical: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">indolore et non limité</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">indolore et non limité</div>',
 
     input: selectField(['calcul de schober dorsal']),
     answers: [
@@ -1837,7 +1837,7 @@ const questions = {
   },
   dorsal: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">3 cm</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">3 cm</div>',
 
     input: selectField(['ampliation thoracique']),
     answers: [
@@ -1862,7 +1862,7 @@ const questions = {
   },
   thoracique: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">5 cm</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">5 cm</div>',
 
     answers:[{
       nextId:'conclusionexamen2'
@@ -1872,7 +1872,7 @@ const questions = {
 
   },
   conclusionexamen2:{
-    botPrompt: '<div style="height: auto;margin:-20px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">conclure : examen du rachis entier: pas de limitation ou de douleur au niveau du rachis cervical et dorsal</div>',
+    botPrompt: '<div style="height: auto;margin:-20% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">conclure : examen du rachis entier: pas de limitation ou de douleur au niveau du rachis cervical et dorsal</div>',
       answers: [
       {
         nextId: 'listInPart2',
@@ -1892,7 +1892,7 @@ const questions = {
   // Debut de Examen des sacro-iliaques
 
   iliaques: {
-        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+        botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -1923,7 +1923,7 @@ const questions = {
   },
   trepied: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">douleur</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">douleur</div>',
 
     input: selectField(['gaenslen']),
     answers: [
@@ -1949,7 +1949,7 @@ const questions = {
   },
   gaenslen: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">positif</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">positif</div>',
 
     input: selectField(['rapprochement']),
     answers: [
@@ -1973,7 +1973,7 @@ const questions = {
 
   },
   rapprochement: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">positif</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">positif</div>',
     input: selectField(['écartement']),
     answers: [
       {
@@ -1994,7 +1994,7 @@ const questions = {
 
   },
   ecartement: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">positif</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">positif</div>',
     input: selectField(['test de cisaillement vertical']),
     answers: [
       {
@@ -2015,7 +2015,7 @@ const questions = {
   },
   vertical: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">négatif</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">négatif</div>',
 
     answers:[{
       nextId:'conclusionexamen3'
@@ -2025,7 +2025,7 @@ const questions = {
 
   },
   conclusionexamen3:{
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">conclure : examen des sacro iliaques: Trois tests sur cinq sont positifs</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">conclure : examen des sacro iliaques: Trois tests sur cinq sont positifs</div>',
       answers: [
       {
         nextId: 'listInPart2',
@@ -2041,7 +2041,7 @@ const questions = {
   // Fin de Examen des sacro-iliaques
   // Debut de Examen des articulations périphériques
   peripheriques: {
-        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+        botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -2066,7 +2066,7 @@ const questions = {
   },
   articulaire: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">pas de tuméfaction</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">pas de tuméfaction</div>',
 
     input: selectField(['mobilité articulaire']),
     answers: [
@@ -2081,7 +2081,7 @@ const questions = {
 
   articulaire1: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">indolore et non limité</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">indolore et non limité</div>',
 
     input: selectField(['mobilité des hanches']),
     answers: [
@@ -2094,7 +2094,7 @@ const questions = {
   },
   hanches: {
 
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">130/10/45/30/45/30</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">130/10/45/30/45/30</div>',
 
     answers:[{
       nextId:'conclusionexamen4'
@@ -2104,7 +2104,7 @@ const questions = {
 
   },
   conclusionexamen4:{
-    botPrompt: '<div style="height: auto;margin:-20px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">conclure : examen des articulations périphérique: les articulations sont libres et indolores</div>',
+    botPrompt: '<div style="height: auto;margin:-20% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">conclure : examen des articulations périphérique: les articulations sont libres et indolores</div>',
       answers: [
       {
         nextId: 'listInPart2',
@@ -2119,7 +2119,7 @@ const questions = {
   // Debut de Examen neurologique
 
   neurologique: {
-        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+        botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -2134,7 +2134,7 @@ const questions = {
 
   },
   sensitive1: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     input: selectField(['réflexe ostéo-tendineux']),
     answers: [
@@ -2147,7 +2147,7 @@ const questions = {
 
   },
   tendineux1: {
- botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">présents et symétriques</div>',
+ botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">présents et symétriques</div>',
 
     input: selectField(['anesthésie en selle']),
     answers: [
@@ -2160,7 +2160,7 @@ const questions = {
 
   },
   selle1: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     answers:[{
       nextId:'conclusionexamen5'
@@ -2170,7 +2170,7 @@ const questions = {
 
   },
   conclusionexamen5:{
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Examen neurologique sans anomalie</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Examen neurologique sans anomalie</div>',
       answers: [
       {
         nextId: 'listInPart2',
@@ -2184,7 +2184,7 @@ const questions = {
   // Fin de Examen neurologique
   // Debut de Examen cardio pulmonaire
   pulmonaire: {
-        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+        botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -2197,7 +2197,7 @@ const questions = {
     ],
   },
   cardiaque1: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">normale</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">normale</div>',
     input: selectField(['ausculatation pulmonaire']),
     answers: [
       {
@@ -2208,7 +2208,7 @@ const questions = {
 
   },
   pulmonaire1: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">normale</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">normale</div>',
     answers:[{
       nextId:'conclusionexamen6'
 
@@ -2217,7 +2217,7 @@ const questions = {
 
   },
   conclusionexamen6:{
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Examen cardio-pulmonaire sans anomalie</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Examen cardio-pulmonaire sans anomalie</div>',
       answers: [
       {
         nextId: 'listInPart2',
@@ -2231,7 +2231,7 @@ const questions = {
   // Fin de Examen cardio pulmonaire
   // Debut de Examen abdomino pelvien
   pelvien: {
-        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+        botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -2244,7 +2244,7 @@ const questions = {
     ],
   },
   palpation1: {
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">normale</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">normale</div>',
     input: selectField(['viscéromégalie']),
     answers: [
       {
@@ -2253,7 +2253,7 @@ const questions = {
       },
     ],},
     visceromégalie:{
-    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">normale</div>',
+    botPrompt: '<div style="height:auto;margin:0% 0% -80% 0%;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">normale</div>',
     answers:[{
       nextId:'conclusionexamen7'
 
@@ -2262,7 +2262,7 @@ const questions = {
 
   },
   conclusionexamen7:{
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Examen abdomino-pelvien sans anomalie</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Examen abdomino-pelvien sans anomalie</div>',
       answers: [
       {
         nextId: 'listInPart2',
@@ -2278,7 +2278,7 @@ const questions = {
   // Partie 3
   partie3: {
   
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Qu’elle est l’étape suivante, vous demandez …..</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Qu’elle est l’étape suivante, vous demandez …..</div>',
 
     input: selectField(['IRM rachidienne', 'Radiographie du bassin et du rachis lombaire face et profil', 'TDM des sacro-iliaque']),
     answers: [
@@ -2301,7 +2301,7 @@ const questions = {
 
   },
   mauvaiseReponse2:{
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
     answers: [
       {
         nextId:'partie3'
@@ -2355,7 +2355,7 @@ const questions = {
 
   },
   mauvaiseReponse3:{
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
     answers: [
       {
         nextId:'tofigue15'
@@ -2367,7 +2367,7 @@ const questions = {
   },
   vertebres1: {
 
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Vous voulez prescrire un bilan biologique ?</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Vous voulez prescrire un bilan biologique ?</div>',
 
     input: selectField([
       'VS, CRP, Typage HLA',
@@ -2391,7 +2391,7 @@ const questions = {
     ],
   },
   mauvaiseReponse4:{
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
     answers: [
       {
         nextId:'vertebres1'
@@ -2402,7 +2402,7 @@ const questions = {
 
   },
   greenResults:{
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">HLA B27 <br> VS= 14 mm <br> CRP à 18 mg/l  </div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">HLA B27 <br> VS= 14 mm <br> CRP à 18 mg/l  </div>',
     answers:[{
       nextId:'CRP'
 
@@ -2413,7 +2413,7 @@ const questions = {
 
   CRP: {
 
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Quel est votre diagnostic Dr ?</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Quel est votre diagnostic Dr ?</div>',
 
     input: selectField([
       'Spondylarthrite axiale radiographique',
@@ -2443,7 +2443,7 @@ const questions = {
 
   },
   mauvaiseReponse5:{
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
     answers: [
       {
         nextId:'CRP'
@@ -2455,7 +2455,7 @@ const questions = {
   },
   vraireponse: {
     input: endOfConversation(),
-    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:green;border-radius: 10px;color:white;font-weight: bold;">Bravo, bonne réponse. Mr Zied présente une spondylarthrite axiale radiographique et enthésitique.</div>',
+    botPrompt: '<div style="height: auto;margin:-80% 0% 0% 0%;background-color:green;border-radius: 10px;color:white;font-weight: bold;">Bravo, bonne réponse. Mr Zied présente une spondylarthrite axiale radiographique et enthésitique.</div>',
 
 
     finishConversation: true,
