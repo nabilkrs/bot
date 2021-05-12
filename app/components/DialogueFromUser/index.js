@@ -31,7 +31,7 @@ class DialogueFromUser extends React.Component { // eslint-disable-line react/pr
 
   textBubble(bubble, keyIndex) {
     return (
-      <article key={keyIndex} className="qt-chat__bubble">
+      <article key={keyIndex} style={{color: "red"}} className="qt-chat__bubble">
         <div>
           <p>{bubble.content}</p>
         </div>

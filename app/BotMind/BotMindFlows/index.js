@@ -16,7 +16,10 @@ const questions = {
 
   // Start
   start: {
-    botPrompt: 'bonjour Dr, j’ai mal au dos',
+    
+   
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">bonjour Dr, j’ai mal au dos</div>',
+
 
     answers: [
       {
@@ -27,7 +30,9 @@ const questions = {
   // /////////////////////////
   // Groupe 1
   bot1: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">Vous voulez en savoir plus sur ….<strong>',
+
+    
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Vous voulez en savoir plus sur ….</div>',
     input: selectField(['Sur le terrain du patient', 'Sur les caractéristiques de la douleur', 'Sur les signes associés']),
     shouldEstimateRecommendation: true,
     answers: [
@@ -59,7 +64,11 @@ const questions = {
 
   groupeone: {
 
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+  
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+
+    
+
     input: selectField(['quel âge avez-vous ?', 'quelle est votre profession ?', 'avez-vous des antécédents familiaux de rhumatisme ?']),
     shouldEstimateRecommendation: true,
     answers: [
@@ -80,7 +89,8 @@ const questions = {
     ],
   },
   returnerGroupe1: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+
 
     input: selectField(['quel âge avez-vous ?', 'quelle est votre profession ?', 'avez-vous des antécédents familiaux de rhumatisme ?']),
 
@@ -103,8 +113,10 @@ const questions = {
 
   },
   age: {
-    botPrompt: '28 ans',
-    input: selectField(['avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?', 'Retourner aux réponses précidents']),
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">28 ans</div>',
+
+    input: selectField(['avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?',
@@ -119,7 +131,7 @@ const questions = {
       //   nextId: 'mal',
       // },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'returnerGroupe1',
 
       }
@@ -132,8 +144,8 @@ const questions = {
 
   },
   profession: {
-    botPrompt: 'Serveur',
-    input: selectField(['avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?', 'Retourner aux réponses précidents']),
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">serveur</div>',
+    input: selectField(['avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?',
@@ -148,7 +160,7 @@ const questions = {
       //   nextId: 'mal',
       // },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'returnerGroupe1',
 
       }
@@ -160,8 +172,9 @@ const questions = {
 
   },
   antecedents: {
-    botPrompt: 'non',
-    input: selectField(['avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?', 'Retourner aux réponses précidents']),
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
+    input: selectField(['avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?',
@@ -176,7 +189,7 @@ const questions = {
       //   nextId: 'mal',
       // },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'returnerGroupe1',
 
       }
@@ -188,7 +201,8 @@ const questions = {
 
   },
   groupe2boot:{
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+
       input: selectField(['où avez-vous mal ?','la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?']),
     answers: [
       {
@@ -217,9 +231,11 @@ const questions = {
   // Groupe 1
   // Groupe 2//////
   retournerGroupe2: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
-    input: selectField(['avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?', 'Retourner aux réponses précidents']),
+
+
+    input: selectField(['avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?',
@@ -234,7 +250,7 @@ const questions = {
       //   nextId: 'mal',
       // },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'returnerGroupe1',
 
       }
@@ -246,8 +262,9 @@ const questions = {
   },
 
   MICI: {
-    botPrompt: 'non',
-    // input: selectField(['la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?', 'Retourner aux réponses précidents']),
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
+    // input: selectField(['la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?', 'Retourner aux réponses précédentes']),
     // answers: [
     //   {
     //     answer: 'la douleur a commencé de façon brutale ?',
@@ -262,7 +279,7 @@ const questions = {
     //     nextId: 'poussee',
     //   },
     //   {
-    //     answer: 'Retourner aux réponses précidents',
+    //     answer: 'Retourner aux réponses précédentes',
     //     nextId: 'retournerGroupe2',
 
     //   }
@@ -282,8 +299,10 @@ const questions = {
 
 
   fumeur: {
-    botPrompt: 'oui, je fume 1 paquet par jour depuis 10 ans',
-    // input: selectField(['la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?', 'Retourner aux réponses précidents']),
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, je fume 1 paquet par jour depuis 10 ans</div>',
+
+    // input: selectField(['la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?', 'Retourner aux réponses précédentes']),
     // answers: [
     //   {
 
@@ -299,7 +318,7 @@ const questions = {
     //     nextId: 'poussee',
     //   },
     //   {
-    //     answer: 'Retourner aux réponses précidents',
+    //     answer: 'Retourner aux réponses précédentes',
     //     nextId: 'retournerGroupe2',
 
     //   }
@@ -313,8 +332,10 @@ const questions = {
 
   },
   mal: {
-    botPrompt: 'au niveau du bas du dos',
-    input: selectField(['la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?', 'Retourner aux réponses précidents']),
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">au niveau du bas du dos</div>',
+
+    input: selectField(['la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'la douleur a commencé de façon brutale ?',
@@ -329,7 +350,7 @@ const questions = {
         nextId: 'poussee',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe2',
 
       }
@@ -343,9 +364,11 @@ const questions = {
   // FIN Groupe 2//////
   //  Groupe 3/////
   retournerGroupe3: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
-    input: selectField(['où avez-vous mal ?','la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?', 'Retourner aux réponses précidents']),
+
+
+    input: selectField(['où avez-vous mal ?','la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'où avez-vous mal ?',
@@ -364,7 +387,7 @@ const questions = {
         nextId: 'poussee',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe2',
 
       }
@@ -377,11 +400,13 @@ const questions = {
 
 
   brutale: {
-    botPrompt: 'non, petit à petit',
-    input: selectField(['y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?', 'Retourner aux réponses précidents']),
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non, petit à petit</div>',
+
+    input: selectField(['y a-t-il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffrer cette douleur de 0 à 10 ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
-        answer: 'y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?',
+        answer: 'y a-t-il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?',
         nextId: 'lourde',
       },
       {
@@ -389,11 +414,11 @@ const questions = {
         nextId: 'fourmillements',
       },
       {
-        answer: 'pouvez vous chiffré cette douleur de 0 à 10 ?',
+        answer: 'pouvez vous chiffrer cette douleur de 0 à 10 ?',
         nextId: 'ten',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe3',
 
       }
@@ -406,8 +431,10 @@ const questions = {
 
   },
   avezvous: {
-    botPrompt: 'depuis 6 mois',
-    input: selectField(['y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?', 'Retourner aux réponses précidents']),
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">depuis 6 mois</div>',
+
+    input: selectField(['y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?',
@@ -422,7 +449,7 @@ const questions = {
         nextId: 'ten',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe3',
 
       }
@@ -433,8 +460,9 @@ const questions = {
 
   },
   poussee: {
-    botPrompt: 'oui, par poussée 2-3 mois',
-    input: selectField(['y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?', 'Retourner aux réponses précidents']),
+    
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, par poussée 2-3 mois</div>',
+    input: selectField(['y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?',
@@ -449,7 +477,7 @@ const questions = {
         nextId: 'ten',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe3',
 
       }
@@ -459,9 +487,11 @@ const questions = {
   },
   // Fin Groupe 3/////
   retournerGroupe4: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
-    input: selectField(['y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?', 'Retourner aux réponses précidents']),
+
+
+    input: selectField(['y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?',
@@ -476,7 +506,7 @@ const questions = {
         nextId: 'ten',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe3',
 
       }
@@ -488,8 +518,9 @@ const questions = {
   },
 
   lourde: {
-    botPrompt: 'non',
-    input: selectField(['est ce que la douleur irradie au niveau du membre inférieur ?', 'quand sentez-vous cette douleur ?', 'vous vous sentez raide le matin ? Pendant combien de temps ?', 'Retourner aux réponses précidents']),
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
+    input: selectField(['est ce que la douleur irradie au niveau du membre inférieur ?', 'quand sentez-vous cette douleur ?', 'vous vous sentez raide le matin ? Pendant combien de temps ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'est ce que la douleur irradie au niveau du membre inférieur ?',
@@ -504,7 +535,7 @@ const questions = {
         nextId: 'temps',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe4',
 
       }
@@ -516,8 +547,9 @@ const questions = {
 
   },
   fourmillements: {
-    botPrompt: 'à type de crampes',
-    input: selectField(['est ce que la douleur irradie au niveau du membre inférieur ?', 'quand sentez-vous cette douleur ?', 'vous vous sentez raide le matin ? Pendant combien de temps ?', 'Retourner aux réponses précidents']),
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">à type de crampes</div>',
+    input: selectField(['est ce que la douleur irradie au niveau du membre inférieur ?', 'quand sentez-vous cette douleur ?', 'vous vous sentez raide le matin ? Pendant combien de temps ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'est ce que la douleur irradie au niveau du membre inférieur ?',
@@ -532,7 +564,7 @@ const questions = {
         nextId: 'temps',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe4',
 
       }
@@ -543,8 +575,9 @@ const questions = {
 
   },
   ten: {
-    botPrompt: '6/10',
-    input: selectField(['est ce que la douleur irradie au niveau du membre inférieur ?', 'quand sentez-vous cette douleur ?', 'vous vous sentez raide le matin ? Pendant combien de temps ?', 'Retourner aux réponses précidents']),
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">6/10</div>',
+    input: selectField(['est ce que la douleur irradie au niveau du membre inférieur ?', 'quand sentez-vous cette douleur ?', 'vous vous sentez raide le matin ? Pendant combien de temps ?', 'Retourner aux réponses précédentes']),
 
     answers: [
       {
@@ -560,7 +593,7 @@ const questions = {
         nextId: 'temps',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe4',
 
       }
@@ -570,9 +603,11 @@ const questions = {
   // Fin Groupe 4/////
   // Groupe 5 /////
   retournerGroupe5: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
-    input: selectField(['est ce que la douleur irradie au niveau du membre inférieur ?', 'quand sentez-vous cette douleur ?', 'vous vous sentez raide le matin ? Pendant combien de temps ?', 'Retourner aux réponses précidents']),
+
+
+    input: selectField(['est ce que la douleur irradie au niveau du membre inférieur ?', 'quand sentez-vous cette douleur ?', 'vous vous sentez raide le matin ? Pendant combien de temps ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'est ce que la douleur irradie au niveau du membre inférieur ?',
@@ -587,7 +622,7 @@ const questions = {
         nextId: 'temps',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe4',
 
       }
@@ -598,8 +633,9 @@ const questions = {
 
   },
   inferieur: {
-    botPrompt: 'non',
-    input: selectField(['est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?',  'Retourner aux réponses précidents']),
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
+    input: selectField(['est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?',  'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'est ce que cette douleur est impulsive à la toux ?',
@@ -614,7 +650,7 @@ const questions = {
       //   nextId: 'reveil',
       // },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe5',
 
       }
@@ -625,8 +661,9 @@ const questions = {
 
   },
   douleur: {
-    botPrompt: 'surtout la 2ème moitié de la nuit et elle est calmée lors de l’activité physique',
-    input: selectField(['est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?', 'avez-vous mal au niveau des talons, surtout le matin au réveil ?', 'Retourner aux réponses précidents']),
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">surtout la 2ème moitié de la nuit et elle est calmée lors de l’activité physique</div>',
+    input: selectField(['est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?', 'avez-vous mal au niveau des talons, surtout le matin au réveil ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'est ce que cette douleur est impulsive à la toux ?',
@@ -641,7 +678,7 @@ const questions = {
         nextId: 'reveil',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe5',
 
       }
@@ -651,8 +688,9 @@ const questions = {
 
   },
   temps: {
-    botPrompt: 'oui, 1h',
-    // input: selectField(['est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?', 'avez-vous mal au niveau des talons, surtout le matin au réveil ?', 'Retourner aux réponses précidents']),
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, 1h</div>',
+    // input: selectField(['est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?', 'avez-vous mal au niveau des talons, surtout le matin au réveil ?', 'Retourner aux réponses précédentes']),
     // answers: [
     //   {
     //     answer: 'est ce que cette douleur est impulsive à la toux ?',
@@ -667,7 +705,7 @@ const questions = {
     //     nextId: 'reveil',
     //   },
     //   {
-    //     answer: 'Retourner aux réponses précidents',
+    //     answer: 'Retourner aux réponses précédentes',
     //     nextId: 'retournerGroupe5',
 
     //   }
@@ -682,9 +720,11 @@ const questions = {
   // FIN GROUPE 5/////
   // GROUPE 6/////
   retournerGroupe6: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
-    input: selectField(['est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?', 'avez-vous mal au niveau des talons, surtout le matin au réveil ?', 'Retourner aux réponses précidents']),
+
+
+    input: selectField(['est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?', 'avez-vous mal au niveau des talons, surtout le matin au réveil ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'est ce que cette douleur est impulsive à la toux ?',
@@ -699,7 +739,7 @@ const questions = {
         nextId: 'reveil',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe5',
 
       }
@@ -710,16 +750,18 @@ const questions = {
 
   },
   groupe3boot:{
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
-        input: selectField(['avez-vous mal au niveau des talons, surtout le matin au réveil ?','avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?']),
+
+
+        input: selectField(['avez-vous mal au niveau des talons, surtout le matin au réveil ?','avez-vous présenté une tuméfaction d’un doigt ou d’un orteil en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?']),
     answers: [
       {
         answer: 'avez-vous mal au niveau des talons, surtout le matin au réveil ?',
         nextId: 'reveil',
       },
       {
-        answer: 'avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?',
+        answer: 'avez-vous présenté une tuméfaction d’un doigt ou d’un orteil en saucisse ?',
         nextId: 'saucisse',
       },
       {
@@ -738,8 +780,9 @@ const questions = {
 
 
   toux: {
-    botPrompt: 'non',
-    // input: selectField(['avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?', 'Retourner aux réponses précidents']),
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
+    // input: selectField(['avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?', 'Retourner aux réponses précédentes']),
     // answers: [
     //   {
     //     answer: 'avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?',
@@ -754,7 +797,7 @@ const questions = {
     //     nextId: 'fievre',
     //   },
     //   {
-    //     answer: 'Retourner aux réponses précidents',
+    //     answer: 'Retourner aux réponses précédentes',
     //     nextId: 'retournerGroupe6',
 
     //   }
@@ -769,8 +812,9 @@ const questions = {
 
   },
   fesses: {
-    botPrompt: 'oui, des 2 côtés me réveillant la 2ème moitié de la nuit',
-    // input: selectField(['avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?', 'Retourner aux réponses précidents']),
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, des 2 côtés me réveillant la 2ème moitié de la nuit</div>',
+    // input: selectField(['avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?', 'Retourner aux réponses précédentes']),
     // answers: [
     //   {
     //     answer: 'avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?',
@@ -785,7 +829,7 @@ const questions = {
     //     nextId: 'fievre',
     //   },
     //   {
-    //     answer: 'Retourner aux réponses précidents',
+    //     answer: 'Retourner aux réponses précédentes',
     //     nextId: 'retournerGroupe6',
 
     //   }
@@ -798,8 +842,8 @@ const questions = {
 
   },
   reveil: {
-    botPrompt: 'oui',
-    input: selectField(['avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?', 'Retourner aux réponses précidents']),
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui</div>',
+    input: selectField(['avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?',
@@ -814,7 +858,7 @@ const questions = {
         nextId: 'fievre',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe6',
 
       }
@@ -827,9 +871,11 @@ const questions = {
   //FIN GROUPE 6 ////////
   //GROUPE 7 /////
   retournerGroupe7: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
-    input: selectField(['avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?', 'Retourner aux réponses précidents']),
+
+
+    input: selectField(['avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?',
@@ -844,7 +890,7 @@ const questions = {
         nextId: 'fievre',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe6',
 
       }
@@ -856,8 +902,8 @@ const questions = {
   },
 
   saucisse: {
-    botPrompt: 'oui',
-    input: selectField(['sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?', 'Retourner aux réponses précidents']),
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui</div>',
+    input: selectField(['sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'sentez vous des douleurs articulaires ou musculaires associées ?',
@@ -872,7 +918,7 @@ const questions = {
         nextId: 'debutgr7',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe7',
 
       }
@@ -884,8 +930,9 @@ const questions = {
 
   },
   periode: {
-    botPrompt: 'non',
-    input: selectField(['sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?', 'Retourner aux réponses précidents']),
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
+    input: selectField(['sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'sentez vous des douleurs articulaires ou musculaires associées ?',
@@ -900,7 +947,7 @@ const questions = {
         nextId: 'debutgr7',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe7',
 
       }
@@ -910,8 +957,9 @@ const questions = {
 
   },
   fievre: {
-    botPrompt: 'non',
-    input: selectField(['sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?', 'Retourner aux réponses précidents']),
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
+    input: selectField(['sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'sentez vous des douleurs articulaires ou musculaires associées ?',
@@ -926,7 +974,7 @@ const questions = {
         nextId: 'debutgr7',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe7',
 
       }
@@ -939,9 +987,11 @@ const questions = {
   // GROUPE 8 /////
 
   retournerGroupe8: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
-    input: selectField(['sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?', 'Retourner aux réponses précidents']),
+
+
+    input: selectField(['sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'sentez vous des douleurs articulaires ou musculaires associées ?',
@@ -956,7 +1006,7 @@ const questions = {
         nextId: 'debutgr7',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe7',
 
       }
@@ -973,8 +1023,9 @@ const questions = {
 
 
   associeesgr7: {
-    botPrompt: 'non',
-    input: selectField(['avez-vous des brulures mictionnels, une toux ou autres ?', 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?', 'avez-vous présenté une rougeur oculaire avec un flou visuel ?', 'Retourner aux réponses précidents']),
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
+    input: selectField(['avez-vous des brulures mictionnels, une toux ou autres ?', 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?', 'avez-vous présenté une rougeur oculaire avec un flou visuel ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'avez-vous des brulures mictionnels, une toux ou autres ?',
@@ -989,7 +1040,7 @@ const questions = {
         nextId: 'visuel8',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe8',
 
       }
@@ -999,8 +1050,9 @@ const questions = {
 
   },
   nocturnesgr7: {
-    botPrompt: 'non',
-    input: selectField(['avez-vous des brulures mictionnels, une toux ou autres ?', 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?', 'avez-vous présenté une rougeur oculaire avec un flou visuel ?', 'Retourner aux réponses précidents']),
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
+    input: selectField(['avez-vous des brulures mictionnels, une toux ou autres ?', 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?', 'avez-vous présenté une rougeur oculaire avec un flou visuel ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'avez-vous des brulures mictionnels, une toux ou autres ?',
@@ -1015,7 +1067,7 @@ const questions = {
         nextId: 'visuel8',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe8',
 
       }
@@ -1025,8 +1077,9 @@ const questions = {
 
   },
   debutgr7: {
-    botPrompt: 'non',
-    input: selectField(['avez-vous des brulures mictionnels, une toux ou autres ?', 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?', 'avez-vous présenté une rougeur oculaire avec un flou visuel ?', 'Retourner aux réponses précidents']),
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
+    input: selectField(['avez-vous des brulures mictionnels, une toux ou autres ?', 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?', 'avez-vous présenté une rougeur oculaire avec un flou visuel ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'avez-vous des brulures mictionnels, une toux ou autres ?',
@@ -1041,21 +1094,23 @@ const questions = {
         nextId: 'visuel8',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe8',
 
       }
 
     ],
-
+    
 
   },
   // FIN GROUPE 8
   // GROUPE 9
   retournerGroupe9: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
-    input: selectField(['avez-vous des brulures mictionnels, une toux ou autres ?', 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?', 'avez-vous présenté une rougeur oculaire avec un flou visuel ?', 'Retourner aux réponses précidents']),
+
+
+    input: selectField(['avez-vous des brulures mictionnels, une toux ou autres ?', 'avez-vous une hématémèse, une hémoptysie ou une dysurie ?', 'avez-vous présenté une rougeur oculaire avec un flou visuel ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
         answer: 'avez-vous des brulures mictionnels, une toux ou autres ?',
@@ -1070,7 +1125,7 @@ const questions = {
         nextId: 'visuel8',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe8',
 
       }
@@ -1086,13 +1141,17 @@ const questions = {
 
 
   autres8: {
-    botPrompt: 'non',
-    input: selectField(['avez-vous des lésions cutanées squameuses ?', 'avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?', 'Retourner aux réponses précidents']),
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
+    input: selectField(['fuite /rétention urinaire, incontinence anale, constipation, impuissance ?', 'avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
-        answer: 'avez-vous des lésions cutanées squameuses ?',
-        nextId: 'squameuses9',
+        answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
+        nextId: 'impuissance10',
       },
+
+
+
       {
         answer: 'avez-vous une diarrhée ?',
         nextId: 'diarrhee9',
@@ -1102,7 +1161,7 @@ const questions = {
         nextId: 'traitement9',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe9',
 
       }
@@ -1112,13 +1171,17 @@ const questions = {
 
   },
   dysurie8: {
-    botPrompt: 'non',
-    input: selectField(['avez-vous des lésions cutanées squameuses ?', 'avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?', 'Retourner aux réponses précidents']),
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
+    input: selectField(['fuite /rétention urinaire, incontinence anale, constipation, impuissance ?','avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
-        answer: 'avez-vous des lésions cutanées squameuses ?',
-        nextId: 'squameuses9',
+        answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
+        nextId: 'impuissance10',
       },
+
+
+
       {
         answer: 'avez-vous une diarrhée ?',
         nextId: 'diarrhee9',
@@ -1128,7 +1191,7 @@ const questions = {
         nextId: 'traitement9',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe9',
 
       }
@@ -1138,13 +1201,16 @@ const questions = {
 
   },
   visuel8: {
-    botPrompt: 'non',
-    input: selectField(['avez-vous des lésions cutanées squameuses ?', 'avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?', 'Retourner aux réponses précidents']),
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
+    input: selectField(['fuite /rétention urinaire, incontinence anale, constipation, impuissance ?', 'avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
-        answer: 'avez-vous des lésions cutanées squameuses ?',
-        nextId: 'squameuses9',
+        answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
+        nextId: 'impuissance10',
       },
+
+
       {
         answer: 'avez-vous une diarrhée ?',
         nextId: 'diarrhee9',
@@ -1154,7 +1220,7 @@ const questions = {
         nextId: 'traitement9',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe9',
 
       }
@@ -1166,14 +1232,17 @@ const questions = {
   // FIN GROUPE 9
   // GROUPE 10
   retournerGroupe10: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
-    input: selectField(['avez-vous des lésions cutanées squameuses ?', 'avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?', 'Retourner aux réponses précidents']),
+
+
+    input: selectField(['fuite /rétention urinaire, incontinence anale, constipation, impuissance ?','avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?', 'Retourner aux réponses précédentes']),
     answers: [
       {
-        answer: 'avez-vous des lésions cutanées squameuses ?',
-        nextId: 'squameuses9',
+        answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
+        nextId: 'impuissance10',
       },
+
       {
         answer: 'avez-vous une diarrhée ?',
         nextId: 'diarrhee9',
@@ -1183,7 +1252,7 @@ const questions = {
         nextId: 'traitement9',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe9',
 
       }
@@ -1194,19 +1263,16 @@ const questions = {
 
   },
   squameuses9: {
-    botPrompt: 'non',
-    input: selectField(['déficit moteur ?', 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?', 'Retourner aux réponses précidents']),
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
+    input: selectField(['fuite /rétention urinaire, incontinence anale, constipation, impuissance ?', 'Retourner aux réponses précédentes']),
     answers: [
-      {
-        answer: 'déficit moteur ?',
-        nextId: 'moteur10',
-      },
       {
         answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
         nextId: 'impuissance10',
       },
       {
-        answer: 'Retourner aux réponses précidents',
+        answer: 'Retourner aux réponses précédentes',
         nextId: 'retournerGroupe10',
 
       }
@@ -1216,46 +1282,20 @@ const questions = {
 
   },
   diarrhee9: {
-    botPrompt: 'non',
-    input: selectField(['déficit moteur ?', 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?', 'Retourner aux réponses précidents']),
-    answers: [
-      {
-        answer: 'déficit moteur ?',
-        nextId: 'moteur10',
-      },
-      {
-        answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
-        nextId: 'impuissance10',
-      },
-      {
-        answer: 'Retourner aux réponses précidents',
-        nextId: 'retournerGroupe10',
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
-      }
-
-    ],
+    answers:[{
+      nextId:'conclusionboot2'
+    }]
 
 
   },
   traitement9: {
-    botPrompt: 'oui, des anti stéroïdiens de synthèse, avec une nette amélioration',
-    input: selectField(['déficit moteur ?', 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?', 'Retourner aux réponses précidents']),
-    answers: [
-      {
-        answer: 'déficit moteur ?',
-        nextId: 'moteur10',
-      },
-      {
-        answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
-        nextId: 'impuissance10',
-      },
-      {
-        answer: 'Retourner aux réponses précidents',
-        nextId: 'retournerGroupe10',
 
-      }
-
-    ],
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, des anti stéroïdiens de synthèse, avec une nette amélioration</div>',
+    answers:[{
+      nextId:'conclusionboot2'
+    }]
 
 
   },
@@ -1268,7 +1308,8 @@ const questions = {
 
 
   moteur10: {
-    botPrompt: 'non',
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
     // input: selectField(['Vous êtes devant un tableau de lombalgies secondaires', 'Vous êtes devant un tableau de lombalgies communes']),
     // answers: [
     //   {
@@ -1287,8 +1328,24 @@ const questions = {
 
 
   },
+  backtosame:{
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
+    // botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
+
+ 
+    
+    answers: [
+      {
+        nextId: 'conclusionboot',
+      },
+    ],
+
+
+
+
+  },
   conclusionboot:{
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">Que peux-tu conclure ?<strong>',
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Que peux-tu conclure ?</div>',
     input: selectField(['Vous êtes devant un tableau de lombalgies secondaires', 'Vous êtes devant un tableau de lombalgies communes']),
     answers: [
       {
@@ -1297,7 +1354,7 @@ const questions = {
       },
       {
         answer: 'Vous êtes devant un tableau de lombalgies communes',
-        nextId: 'mauvaiseReponse',
+        nextId: 'backtosame',
       },
 
     ],
@@ -1306,8 +1363,18 @@ const questions = {
 
   },
 
+
+
+
+
+
+
+
+
+
+
   conclusionboot2:{
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">Que peux-tu conclure ?<strong>',
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Que peux-tu conclure ?</div>',
     input: selectField(['Vous êtes devant un tableau de lombalgies secondaires', 'Vous êtes devant un tableau de lombalgies communes']),
     answers: [
       {
@@ -1316,7 +1383,7 @@ const questions = {
       },
       {
         answer: 'Vous êtes devant un tableau de lombalgies communes',
-        nextId: 'mauvaiseReponse',
+        nextId: 'backtosame',
       },
 
     ],
@@ -1334,7 +1401,8 @@ const questions = {
 
 
   impuissance10: {
-    botPrompt: 'non',
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
     answers:[{
       nextId:'conclusionboot2'
     }]
@@ -1348,16 +1416,16 @@ const questions = {
 
   secondaires11: {
     // botPrompt: 'Que faire Dr ?',
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">Que faire à ce stade ?<strong>',
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Que faire à ce stade ?</div>',
     input: selectField(['continuer le traitement', 'faire une IRM du rachis', 'examiner votre patient']),
     answers: [
       {
         answer: 'continuer le traitement',
-        nextId: 'mauvaiseReponse',
+        nextId: 'mauvaiseReponse1',
       },
       {
         answer: 'faire une IRM du rachis',
-        nextId: 'mauvaiseReponse',
+        nextId: 'mauvaiseReponse1',
       },
       {
         answer: 'examiner votre patient',
@@ -1372,9 +1440,24 @@ const questions = {
 
 
   },
+  mauvaiseReponse1:{
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
+    answers: [
+      {
+        nextId:'secondaires11'
+      }
+
+    ],
+
+
+  },
+
+
+
   mauvaiseReponse: {
     input: endOfConversation(),
-    botPrompt: '<strong>vous choisissez la mauvaise réponse, vous devez répéter</strong>',
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
+    
     type: RTypes.TRANSFORMED_TEXT,
     varName: 'userName',
     answers: [
@@ -1391,7 +1474,7 @@ const questions = {
   // Partie 2
 
   listInPart2: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">Que cherchez-vous à l’examen clinique ?<strong>',
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Que cherchez-vous à l’examen clinique ?</div>',
 
     input: selectField([
       'Examen du rachis lombaire',
@@ -1451,7 +1534,8 @@ const questions = {
   //  Examen du rachis lombaire
 
   lombaire: {
-    botPrompt: 'effacement lordose',
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">effacement lordose</div>',
     input: selectField(['Paplation']),
     answers: [
       {
@@ -1468,7 +1552,9 @@ const questions = {
 
   },
   paplation: {
-    botPrompt: 'épineuses lombaires douloureuses et Contracture des muscles para vertébraux',
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">épineuses lombaires douloureuses et Contracture des muscles para vertébraux</div>',
+
+
     input: selectField(['signe de la sonnette']),
 
     answers: [
@@ -1482,7 +1568,9 @@ const questions = {
 
   },
   sonnette: {
-    botPrompt: 'sonnette',
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">sonnette</div>',
+
     answers: [
       {
         nextId: 'tofigure1',
@@ -1506,7 +1594,9 @@ const questions = {
 
   },
   negative: {
-    botPrompt: 'négative',
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">négative</div>',
+
     input: selectField(['Indice de Shober']),
     answers: [
       {
@@ -1522,7 +1612,9 @@ const questions = {
   },
 
   Shober: {
-    botPrompt: '2 cm',
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">2 cm</div>',
+
     input: selectField(['Distance doigts sol']),
     answers: [
       {
@@ -1553,7 +1645,9 @@ const questions = {
 
   },
   sol: {
-    botPrompt: '+10 cm',
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">+10 cm</div>',
+
     input: selectField(['signe de lasegue']),
     answers: [
       {
@@ -1580,7 +1674,9 @@ const questions = {
 
   },
   lasegue: {
-    botPrompt: '100°',
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">100°</div>',
+
     // input: selectField(['examen du rachis lombaire : syndrome rachidien avec raideur segmentaire et sans signe de confit disco-radiculaire']),
     // answers: [
     //   {
@@ -1598,7 +1694,7 @@ const questions = {
 
   },
   conclusionexamen1:{
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">conclure : examen du rachis lombaire : syndrome rachidien avec raideur segmentaire et sans signe de confit disco-radiculaire<strong>',
+    botPrompt: '<div style="height: auto;margin:-20px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">conclure : examen du rachis lombaire : syndrome rachidien avec raideur segmentaire et sans signe de confit disco-radiculaire</div>',
       answers: [
       {
         nextId: 'listInPart2',
@@ -1631,7 +1727,9 @@ const questions = {
 
   // Examen du rachis entier :
   entier: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+
+
 
     input: selectField(['déformation dans le plan sagital']),
     answers: [
@@ -1649,7 +1747,8 @@ const questions = {
 
   },
   sagital: {
-    botPrompt: 'non',
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
     input: selectField(['déformation dans le plan frontal']),
     answers: [
       {
@@ -1675,7 +1774,8 @@ const questions = {
 
   },
   frontal: {
-    botPrompt: 'non',
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
     input: selectField(['palpation']),
     answers: [
       {
@@ -1686,7 +1786,9 @@ const questions = {
 
   },
   palpation: {
-    botPrompt: 'indolore',
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">indolore</div>',
+
     input: selectField(['mobilité rachis cervical']),
     answers: [
       {
@@ -1710,7 +1812,9 @@ const questions = {
   },
 
   cervical: {
-    botPrompt: 'indolore et non limité',
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">indolore et non limité</div>',
+
     input: selectField(['calcul de schober dorsal']),
     answers: [
       {
@@ -1732,7 +1836,9 @@ const questions = {
 
   },
   dorsal: {
-    botPrompt: '3 cm',
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">3 cm</div>',
+
     input: selectField(['ampliation thoracique']),
     answers: [
       {
@@ -1755,7 +1861,9 @@ const questions = {
 
   },
   thoracique: {
-    botPrompt: '5 cm',
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">5 cm</div>',
+
     answers:[{
       nextId:'conclusionexamen2'
 
@@ -1764,7 +1872,7 @@ const questions = {
 
   },
   conclusionexamen2:{
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">conclure : examen du rachis entier: pas de limitation ou de douleur au niveau du rachis cervical et dorsal<strong>',
+    botPrompt: '<div style="height: auto;margin:-20px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">conclure : examen du rachis entier: pas de limitation ou de douleur au niveau du rachis cervical et dorsal</div>',
       answers: [
       {
         nextId: 'listInPart2',
@@ -1784,7 +1892,9 @@ const questions = {
   // Debut de Examen des sacro-iliaques
 
   iliaques: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+
+
 
     input: selectField(['trépied']),
     answers: [
@@ -1812,7 +1922,9 @@ const questions = {
 
   },
   trepied: {
-    botPrompt: 'douleur',
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">douleur</div>',
+
     input: selectField(['gaenslen']),
     answers: [
       {
@@ -1836,7 +1948,9 @@ const questions = {
 
   },
   gaenslen: {
-    botPrompt: 'positif',
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">positif</div>',
+
     input: selectField(['rapprochement']),
     answers: [
       {
@@ -1859,7 +1973,7 @@ const questions = {
 
   },
   rapprochement: {
-    botPrompt: 'positif',
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">positif</div>',
     input: selectField(['écartement']),
     answers: [
       {
@@ -1880,7 +1994,7 @@ const questions = {
 
   },
   ecartement: {
-    botPrompt: 'positif',
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">positif</div>',
     input: selectField(['test de cisaillement vertical']),
     answers: [
       {
@@ -1900,7 +2014,9 @@ const questions = {
     ],
   },
   vertical: {
-    botPrompt: 'négatif',
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">négatif</div>',
+
     answers:[{
       nextId:'conclusionexamen3'
 
@@ -1909,7 +2025,7 @@ const questions = {
 
   },
   conclusionexamen3:{
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">conclure : examen des sacro iliaques: Trois tests sur cinq sont positifs<strong>',
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">conclure : examen des sacro iliaques: Trois tests sur cinq sont positifs</div>',
       answers: [
       {
         nextId: 'listInPart2',
@@ -1925,7 +2041,9 @@ const questions = {
   // Fin de Examen des sacro-iliaques
   // Debut de Examen des articulations périphériques
   peripheriques: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+
+
 
     input: selectField(['chercher une tuméfaction articulaire']),
     answers: [
@@ -1947,7 +2065,9 @@ const questions = {
 
   },
   articulaire: {
-    botPrompt: 'pas de tuméfaction',
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">pas de tuméfaction</div>',
+
     input: selectField(['mobilité articulaire']),
     answers: [
       {
@@ -1960,7 +2080,9 @@ const questions = {
 
 
   articulaire1: {
-    botPrompt: 'indolore et non limité',
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">indolore et non limité</div>',
+
     input: selectField(['mobilité des hanches']),
     answers: [
       {
@@ -1971,7 +2093,9 @@ const questions = {
 
   },
   hanches: {
-    botPrompt: '130/10/45/30/45/30',
+
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">130/10/45/30/45/30</div>',
+
     answers:[{
       nextId:'conclusionexamen4'
 
@@ -1980,7 +2104,7 @@ const questions = {
 
   },
   conclusionexamen4:{
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">conclure : examen des articulations périphérique: les articulations sont libres et indolores<strong>',
+    botPrompt: '<div style="height: auto;margin:-20px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">conclure : examen des articulations périphérique: les articulations sont libres et indolores</div>',
       answers: [
       {
         nextId: 'listInPart2',
@@ -1995,7 +2119,9 @@ const questions = {
   // Debut de Examen neurologique
 
   neurologique: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+
+
 
     input: selectField(['deficit moteur ou sensitive']),
     answers: [
@@ -2008,7 +2134,8 @@ const questions = {
 
   },
   sensitive1: {
-    botPrompt: 'non',
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
     input: selectField(['réflexe ostéo-tendineux']),
     answers: [
       {
@@ -2020,7 +2147,8 @@ const questions = {
 
   },
   tendineux1: {
-    botPrompt: 'présents et symétriques',
+ botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">présents et symétriques</div>',
+
     input: selectField(['anesthésie en selle']),
     answers: [
       {
@@ -2032,7 +2160,8 @@ const questions = {
 
   },
   selle1: {
-    botPrompt: 'non',
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
     answers:[{
       nextId:'conclusionexamen5'
 
@@ -2041,7 +2170,7 @@ const questions = {
 
   },
   conclusionexamen5:{
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">Examen neurologique sans anomalie<strong>',
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Examen neurologique sans anomalie</div>',
       answers: [
       {
         nextId: 'listInPart2',
@@ -2055,7 +2184,9 @@ const questions = {
   // Fin de Examen neurologique
   // Debut de Examen cardio pulmonaire
   pulmonaire: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+
+
 
     input: selectField(['auscultation cardiaque']),
     answers: [
@@ -2066,7 +2197,7 @@ const questions = {
     ],
   },
   cardiaque1: {
-    botPrompt: 'normale',
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">normale</div>',
     input: selectField(['ausculatation pulmonaire']),
     answers: [
       {
@@ -2077,7 +2208,7 @@ const questions = {
 
   },
   pulmonaire1: {
-    botPrompt: 'normale',
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">normale</div>',
     answers:[{
       nextId:'conclusionexamen6'
 
@@ -2086,7 +2217,7 @@ const questions = {
 
   },
   conclusionexamen6:{
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">Examen cardio-pulmonaire sans anomalie<strong>',
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Examen cardio-pulmonaire sans anomalie</div>',
       answers: [
       {
         nextId: 'listInPart2',
@@ -2100,7 +2231,9 @@ const questions = {
   // Fin de Examen cardio pulmonaire
   // Debut de Examen abdomino pelvien
   pelvien: {
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">D\'accord<strong>',
+        botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
+
+
 
     input: selectField(['palpation']),
     answers: [
@@ -2111,7 +2244,7 @@ const questions = {
     ],
   },
   palpation1: {
-    botPrompt: 'normale',
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">normale</div>',
     input: selectField(['viscéromégalie']),
     answers: [
       {
@@ -2120,7 +2253,7 @@ const questions = {
       },
     ],},
     visceromégalie:{
-    botPrompt: 'normale',
+    botPrompt: '<div style="height:auto;margin:0px 0px -80px 0px;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">normale</div>',
     answers:[{
       nextId:'conclusionexamen7'
 
@@ -2129,7 +2262,7 @@ const questions = {
 
   },
   conclusionexamen7:{
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">Examen abdomino-pelvien sans anomalie<strong>',
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Examen abdomino-pelvien sans anomalie</div>',
       answers: [
       {
         nextId: 'listInPart2',
@@ -2145,13 +2278,13 @@ const questions = {
   // Partie 3
   partie3: {
   
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">Qu’elle est l’étape suivante, vous demandez …..<strong>',
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Qu’elle est l’étape suivante, vous demandez …..</div>',
 
     input: selectField(['IRM rachidienne', 'Radiographie du bassin et du rachis lombaire face et profil', 'TDM des sacro-iliaque']),
     answers: [
       {
         answer: 'IRM rachidienne',
-        nextId: 'mauvaiseReponse',
+        nextId: 'mauvaiseReponse2',
       },
       {
         answer: 'Radiographie du bassin et du rachis lombaire face et profil',
@@ -2159,11 +2292,22 @@ const questions = {
       },
       {
         answer: 'TDM des sacro-iliaque',
-        nextId: 'mauvaiseReponse',
+        nextId: 'mauvaiseReponse2',
       },
     ],
 
 
+
+
+  },
+  mauvaiseReponse2:{
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
+    answers: [
+      {
+        nextId:'partie3'
+      }
+
+    ],
 
 
   },
@@ -2195,24 +2339,35 @@ const questions = {
       },
       {
         answer: 'Sacro-iliite droite avec aspect irrégulier des plateaux vertébraux de L4 L5',
-        nextId: 'mauvaiseReponse',
+        nextId: 'mauvaiseReponse3',
       },
       {
         answer: 'Atteinte dégénérative des sacro-iliaques et discopathie dégénérative de L4L5',
-        nextId: 'mauvaiseReponse',
+        nextId: 'mauvaiseReponse3',
       },
       {
         answer: 'Sacro-iliite bilatérale stade IV et mise au carré des vertèbres',
-        nextId: 'mauvaiseReponse',
+        nextId: 'mauvaiseReponse3',
       },
     ],
 
 
 
   },
+  mauvaiseReponse3:{
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
+    answers: [
+      {
+        nextId:'tofigue15'
+      }
+
+    ],
+
+
+  },
   vertebres1: {
 
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">Vous voulez prescrire un bilan biologique ?<strong>',
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Vous voulez prescrire un bilan biologique ?</div>',
 
     input: selectField([
       'VS, CRP, Typage HLA',
@@ -2227,16 +2382,27 @@ const questions = {
       },
       {
         answer: 'Bilan phosphocalcique',
-        nextId: 'mauvaiseReponse',
+        nextId: 'mauvaiseReponse4',
       },
       {
         answer: 'Hémocultures',
-        nextId: 'mauvaiseReponse',
+        nextId: 'mauvaiseReponse4',
       },
     ],
   },
+  mauvaiseReponse4:{
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
+    answers: [
+      {
+        nextId:'vertebres1'
+      }
+
+    ],
+
+
+  },
   greenResults:{
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">HLA B27 <br> VS= 14 mm <br> CRP à 18 mg/l  <strong>',
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">HLA B27 <br> VS= 14 mm <br> CRP à 18 mg/l  </div>',
     answers:[{
       nextId:'CRP'
 
@@ -2247,7 +2413,7 @@ const questions = {
 
   CRP: {
 
-    botPrompt: '<strong style="color:DarkGray;font-weight: bold;">Quel est votre diagnostic Dr ?<strong>',
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Quel est votre diagnostic Dr ?</div>',
 
     input: selectField([
       'Spondylarthrite axiale radiographique',
@@ -2258,7 +2424,7 @@ const questions = {
     answers: [
       {
         answer: 'Spondylarthrite axiale radiographique',
-        nextId: 'mauvaiseReponse',
+        nextId: 'mauvaiseReponse5',
       },
       {
         answer: 'Spondylarthrite axiale radiographique et enthésitique',
@@ -2266,19 +2432,32 @@ const questions = {
       },
       {
         answer: 'Spondylodiscite infectieuse ',
-        nextId: 'mauvaiseReponse',
+        nextId: 'mauvaiseReponse5',
       },
       {
         answer: 'Lombosciatique commune',
-        nextId: 'mauvaiseReponse',
+        nextId: 'mauvaiseReponse5',
       },
+    ],
+
+
+  },
+  mauvaiseReponse5:{
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:red;border-radius: 10px;color:white;font-weight: bold;">Mauvaise réponse, essayer de nouveau</div>',
+    answers: [
+      {
+        nextId:'CRP'
+      }
+
     ],
 
 
   },
   vraireponse: {
     input: endOfConversation(),
-    botPrompt: '<strong style="color:green">Bravo, bonne réponse. Mr Zied présente une spondylarthrite axiale radiographique et enthésitique.</strong>!',
+    botPrompt: '<div style="height: auto;margin:-80px 0px 0px 0px;background-color:green;border-radius: 10px;color:white;font-weight: bold;">Bravo, bonne réponse. Mr Zied présente une spondylarthrite axiale radiographique et enthésitique.</div>',
+
+
     finishConversation: true,
     type: RTypes.TRANSFORMED_TEXT,
     varName: 'userName',

@@ -103,7 +103,7 @@ export function disabledFieldText(){
 export function endOfConversation(){
   const fieldTextInput = {
     type: 'endOfConversation',
-    placeholder: '– ' + bc.name + ' a quitté la conversation –',
+    placeholder:  bc.name + ' a quitté la conversation –',
   };
 
   return fieldTextInput;

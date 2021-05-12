@@ -117,18 +117,33 @@ class UserInput extends React.Component { // eslint-disable-line react/prefer-st
         />
 
         <SubmitButton
+        style={{backgroundColor: "red"}}
           refresh
           type="button"
           onClick={this.handlerestartConvo.bind(this)}
         >
-            Recommencer
+    
+          Recommencer
+
+        
+            
           </SubmitButton>
-        <SubmitButtonSmall
+
+          <SubmitButtonSmall
+          style={{backgroundColor: "red"}}
+       
+        
           refresh
           type="button"
-          onClick={this.handlerestartConvo.bind(this)}
-        >
+          onClick={this.handlerestartConvo.bind(this)}>
+            
+          
+
         </SubmitButtonSmall>
+         
+
+
+        
       </article>
     );
   }

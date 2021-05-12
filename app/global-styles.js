@@ -171,19 +171,19 @@ body {
   }
 }
 .qt-chat__dialogue.from-bot .qt-chat__bubble:first-child:not(.is-link) div {
-  border-radius: 50px 50px 50px 0;
+  border-radius: 10px 10px 10px 0;
 }
 @media (max-width: 640px) {
   .qt-chat__dialogue.from-bot .qt-chat__bubble:first-child:not(.is-link) div {
-    border-radius: 40px 50px 50px 0;
+    border-radius: 10px 10px 10px 0;
   }
 }
 .qt-chat__dialogue.from-bot .qt-chat__bubble:last-child div {
-  border-radius: 0 50px 50px 50px;
+  border-radius: 0 10px 10px 10px;
 }
 @media (max-width: 640px) {
   .qt-chat__dialogue.from-bot .qt-chat__bubble:last-child div {
-    border-radius: 0 50px 50px 40px;
+    border-radius: 0 10px 10px 40px;
   }
 }
 
