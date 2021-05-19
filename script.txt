@@ -65,7 +65,7 @@ const questions = {
   groupeone: {
 
   
-    botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+    botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
     
 
@@ -89,7 +89,7 @@ const questions = {
     ],
   },
   returnerGroupe1: {
-    botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+    botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
     input: selectField(['quel âge avez-vous ?', 'quelle est votre profession ?', 'avez-vous des antécédents familiaux de rhumatisme ?']),
@@ -201,7 +201,7 @@ const questions = {
 
   },
   groupe2boot:{
-    botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+    botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
       input: selectField(['où avez-vous mal ?','la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?']),
     answers: [
@@ -231,7 +231,7 @@ const questions = {
   // Groupe 1
   // Groupe 2//////
   retournerGroupe2: {
-        botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+        botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -364,7 +364,7 @@ const questions = {
   // FIN Groupe 2//////
   //  Groupe 3/////
   retournerGroupe3: {
-        botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+        botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -487,7 +487,7 @@ const questions = {
   },
   // Fin Groupe 3/////
   retournerGroupe4: {
-        botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+        botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -603,7 +603,7 @@ const questions = {
   // Fin Groupe 4/////
   // Groupe 5 /////
   retournerGroupe5: {
-        botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+        botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -720,7 +720,7 @@ const questions = {
   // FIN GROUPE 5/////
   // GROUPE 6/////
   retournerGroupe6: {
-        botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+        botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -750,7 +750,7 @@ const questions = {
 
   },
   groupe3boot:{
-        botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+        botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -871,7 +871,7 @@ const questions = {
   //FIN GROUPE 6 ////////
   //GROUPE 7 /////
   retournerGroupe7: {
-        botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+        botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -987,7 +987,7 @@ const questions = {
   // GROUPE 8 /////
 
   retournerGroupe8: {
-        botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+        botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -1106,7 +1106,7 @@ const questions = {
   // FIN GROUPE 8
   // GROUPE 9
   retournerGroupe9: {
-        botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+        botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -1232,7 +1232,7 @@ const questions = {
   // FIN GROUPE 9
   // GROUPE 10
   retournerGroupe10: {
-        botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+        botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -1727,7 +1727,7 @@ const questions = {
 
   // Examen du rachis entier :
   entier: {
-        botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+        botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -1892,7 +1892,7 @@ const questions = {
   // Debut de Examen des sacro-iliaques
 
   iliaques: {
-        botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+        botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -2041,7 +2041,7 @@ const questions = {
   // Fin de Examen des sacro-iliaques
   // Debut de Examen des articulations périphériques
   peripheriques: {
-        botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+        botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -2119,7 +2119,7 @@ const questions = {
   // Debut de Examen neurologique
 
   neurologique: {
-        botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+        botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -2184,7 +2184,7 @@ const questions = {
   // Fin de Examen neurologique
   // Debut de Examen cardio pulmonaire
   pulmonaire: {
-        botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+        botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
@@ -2231,7 +2231,7 @@ const questions = {
   // Fin de Examen cardio pulmonaire
   // Debut de Examen abdomino pelvien
   pelvien: {
-        botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold"></div>',
+        botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">D\'accord</div>',
 
 
 
