@@ -72,7 +72,7 @@ body {
 
 
 .qt-chat__dialogue + .qt-chat__dialogue {
-  margin-top: 1.25rem;
+  margin-top: 0.5rem;
 }
 
 .qt-chat__bubbles {
