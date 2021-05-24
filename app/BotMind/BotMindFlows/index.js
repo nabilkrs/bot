@@ -65,6 +65,38 @@ const questions = {
     // ],
   },
 
+  quitter:{
+    botPrompt: '\0',
+    input: selectField(['Sur le terrain du patient', 'Sur les caractéristiques de la douleur', 'Sur les signes associés','Examiner le patient']),
+    shouldEstimateRecommendation: true,
+    answers: [
+      {
+
+        answer: 'Sur le terrain du patient',
+        nextId: 'groupeone',
+      },
+      {
+        answer: 'Sur les caractéristiques de la douleur',
+        nextId: 'groupe2boot',
+      },
+      {
+        answer: 'Sur les signes associés',
+        nextId: 'groupe3boot',
+      },
+
+      
+      {
+        answer: 'Examiner le patient',
+        nextId: 'listInPart2',
+      },
+
+    ],
+
+
+
+
+  },
+
 
 
 
@@ -81,7 +113,7 @@ const questions = {
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
 
@@ -109,7 +141,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'quel âge avez-vous ?',
@@ -136,7 +168,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?',
@@ -165,7 +197,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?',
@@ -194,7 +226,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?',
@@ -223,7 +255,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'où avez-vous mal ?',
@@ -259,7 +291,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?',
@@ -352,7 +384,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'la douleur a commencé de façon brutale ?',
@@ -385,7 +417,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'où avez-vous mal ?',
@@ -420,7 +452,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'y a-t-il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?',
@@ -450,7 +482,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?',
@@ -478,7 +510,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?',
@@ -507,7 +539,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?',
@@ -536,7 +568,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'est ce que la douleur irradie au niveau du membre inférieur ?',
@@ -565,7 +597,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'est ce que la douleur irradie au niveau du membre inférieur ?',
@@ -594,7 +626,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'est ce que la douleur irradie au niveau du membre inférieur ?',
@@ -623,7 +655,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'est ce que la douleur irradie au niveau du membre inférieur ?',
@@ -651,7 +683,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       
       {
@@ -679,7 +711,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'est ce que cette douleur est impulsive à la toux ?',
@@ -724,7 +756,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'est ce que cette douleur est impulsive à la toux ?',
@@ -754,7 +786,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'avez-vous mal au niveau des talons, surtout le matin au réveil ?',
@@ -839,7 +871,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?',
@@ -871,7 +903,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?',
@@ -899,7 +931,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'sentez vous des douleurs articulaires ou musculaires associées ?',
@@ -928,7 +960,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'sentez vous des douleurs articulaires ou musculaires associées ?',
@@ -955,7 +987,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'sentez vous des douleurs articulaires ou musculaires associées ?',
@@ -987,7 +1019,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'sentez vous des douleurs articulaires ou musculaires associées ?',
@@ -1021,7 +1053,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'avez-vous des brulures mictionnels, une toux ou autres ?',
@@ -1048,7 +1080,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'avez-vous des brulures mictionnels, une toux ou autres ?',
@@ -1075,7 +1107,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'avez-vous des brulures mictionnels, une toux ou autres ?',
@@ -1106,7 +1138,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'avez-vous des brulures mictionnels, une toux ou autres ?',
@@ -1139,7 +1171,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
@@ -1169,7 +1201,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
@@ -1199,7 +1231,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
@@ -1232,7 +1264,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
@@ -1261,7 +1293,7 @@ nextId: 'start',
     answers: [
 {
 answer: 'quitter',
-nextId: 'start',
+nextId: 'quitter',
 },
       {
         answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
