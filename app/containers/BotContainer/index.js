@@ -37,13 +37,22 @@ export class BotContainer extends React.Component { // eslint-disable-line react
     const data = this.props.botContainer;
     return (
       <div>
+        
         <Helmet
           title="Rheumatology Games"
           meta={[
             { name: 'description', content: 'Description of BotContainer' },
           ]}
         />
-        <BotComponent
+        <div style={{backgroundColor: "white",fontSize:'50px', display: "flex",
+          justifyContent: "center",
+          alignItems: "center"}}>
+        <div style={{color: "red",fontSize:'50px'}}>error</div>
+
+        </div>
+       
+        {/* Delete BOT COMPONENT */}
+        {/* <BotComponent
           name="Nabeel"
           conversation={data.conversation}
           active={data.active}
@@ -52,7 +61,7 @@ export class BotContainer extends React.Component { // eslint-disable-line react
           userName={data.userName}
           companyName={data.companyName}
           botThinking={data.botThinking}
-        />
+        /> */}
       </div>
     );
   }

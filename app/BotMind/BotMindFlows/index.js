@@ -18,12 +18,13 @@ const questions = {
   start: {
     
    
-    botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">bonjour Dr, j’ai mal au dos</div>',
+    // botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">bonjour Dr, j’ai mal au dos</div>',
+    botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">erreur</div>',
 
 
     answers: [
       {
-        nextId: 'bot1',
+        nextId: null,
       },
     ],
   },
