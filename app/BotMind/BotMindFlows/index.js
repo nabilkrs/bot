@@ -24,9 +24,9 @@ const questions = {
 
     answers: [
       {
-        // nextId: 'bot1',
+        nextId: 'bot1',
 	// nextId:null, 
-	nextId:null, 
+	
       },
     ],
   },
