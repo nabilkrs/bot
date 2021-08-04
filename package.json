@@ -8,7 +8,7 @@
   },
   "engines": {
     "npm": ">=3",
-    "node": "12.22.3"
+    "node": "12.18.0"
   },
   
   "homepage": "https://github.com/nabilkrs/bot.git",
