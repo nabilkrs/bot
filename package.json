@@ -10,13 +10,12 @@
     "npm": ">=3",
     "node": "12.18.0"
   },
-  
   "homepage": "https://github.com/nabilkrs/bot.git",
   "author": "Icalia Labs",
   "license": "MIT",
   "scripts": {
     "predeploy": "npm run build",
-   "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "heroku-postbuild": "npm run build",
     "analyze:clean": "rimraf stats.json",
     "preanalyze": "npm run analyze:clean",
@@ -219,7 +218,7 @@
     "axios": "^0.18.1",
     "babel-polyfill": "6.20.0",
     "chalk": "1.1.3",
-    "compression": "1.6.2",
+    "compression": "^1.6.2",
     "cross-env": "3.1.3",
     "express": "4.14.0",
     "fontfaceobserver": "2.0.7",

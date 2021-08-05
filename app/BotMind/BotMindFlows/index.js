@@ -8,6 +8,10 @@ import {
 } from '../StateFormatter';
 import * as RTypes from '../responseTypes';
 
+const compression = require('compression')
+
+app.use(compression())
+
 const common_greetings = /(^hello|^hllo|^hi|^hey|^hola|^sup)\b\s?.*$/i;
 const common_greetings_negative = /(?!(^hello|^hi|^hey|^hllo|^sup|^hola)\b)\w+/i;
 
