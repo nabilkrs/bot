@@ -256,7 +256,7 @@ nextId: 'quitter',
   groupe2boot:{
     botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold" hidden></div>',
 
-      input: selectField(['quitter','où avez-vous mal ?','la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?']),
+      input: selectField(['quitter','où avez-vous mal ?','la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous mal ?', 'est-ce que la douleur évolue par poussée ?']),
     answers: [
 {
 answer: 'quitter',
@@ -271,7 +271,7 @@ nextId: 'quitter',
         nextId: 'brutale',
       },
       {
-        answer: 'Depuis combien de temps avez-vous ?',
+        answer: 'Depuis combien de temps avez-vous mal ?',
         nextId: 'avezvous',
       },
       {
@@ -385,7 +385,7 @@ nextId: 'quitter',
 
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">au niveau du bas du dos</div>',
 
-    input: selectField(['quitter','la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?']),
+    input: selectField(['quitter','la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous mal ?', 'est-ce que la douleur évolue par poussée ?']),
     answers: [
 {
 answer: 'quitter',
@@ -396,7 +396,7 @@ nextId: 'quitter',
         nextId: 'brutale',
       },
       {
-        answer: 'Depuis combien de temps avez-vous ?',
+        answer: 'Depuis combien de temps avez-vous mal ?',
         nextId: 'avezvous',
       },
       {
@@ -418,7 +418,7 @@ nextId: 'quitter',
 
 
 
-    input: selectField(['quitter','où avez-vous mal ?','la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous ?', 'est-ce que la douleur évolue par poussée ?']),
+    input: selectField(['quitter','où avez-vous mal ?','la douleur a commencé de façon brutale ?', 'Depuis combien de temps avez-vous mal ?', 'est-ce que la douleur évolue par poussée ?']),
     answers: [
 {
 answer: 'quitter',
@@ -433,7 +433,7 @@ nextId: 'quitter',
         nextId: 'brutale',
       },
       {
-        answer: 'Depuis combien de temps avez-vous ?',
+        answer: 'Depuis combien de temps avez-vous mal ?',
         nextId: 'avezvous',
       },
       {
@@ -453,14 +453,14 @@ nextId: 'quitter',
 
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non, petit à petit</div>',
 
-    input: selectField(['quitter','y a-t-il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffrer cette douleur de 0 à 10 ?']),
+    input: selectField(['quitter','y-a-t-il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffrer cette douleur de 0 à 10 ?']),
     answers: [
 {
 answer: 'quitter',
 nextId: 'quitter',
 },
       {
-        answer: 'y a-t-il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?',
+        answer: 'y-a-t-il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?',
         nextId: 'lourde',
       },
       {
@@ -1517,7 +1517,7 @@ nextId: 'quitter',
       'Examen neurologique',
       'Examen cardio pulmonaire',
       'Examen abdomino pelvien',
-      'Passer les examens'
+      'Quitter les examens'
     ]),
 
     answers: [
@@ -1550,7 +1550,7 @@ nextId: 'quitter',
         nextId: 'pelvien',
       },
       {
-        answer: 'Passer les examens',
+        answer: 'Quitter les examens',
         nextId: 'partie3',
       },
 
@@ -2481,7 +2481,7 @@ nextId: 'listInPart2',
   
     botPrompt: '<div style="height: auto;;background-color:DarkGrey;border-radius: 10px;color:white;font-weight: bold;">Qu’elle est l’étape suivante, vous demandez …..</div>',
 
-    input: selectField(['IRM rachidienne', 'Radiographie du bassin et du rachis lombaire face et profil', 'TDM des sacro-iliaque']),
+    input: selectField(['IRM rachidienne', 'Radiographie du bassin et du rachis lombaire face et profil', 'TDM des sacro-iliaques']),
     answers: [
       {
         answer: 'IRM rachidienne',
@@ -2492,7 +2492,7 @@ nextId: 'listInPart2',
         nextId: 'tofigue15',
       },
       {
-        answer: 'TDM des sacro-iliaque',
+        answer: 'TDM des sacro-iliaques',
         nextId: 'mauvaiseReponse2',
       },
     ],
