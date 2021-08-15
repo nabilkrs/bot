@@ -134,6 +134,8 @@ nextId: 'quitter',
         nextId: 'antecedents',
       },
       
+      
+      
 
     ],
   },
@@ -169,7 +171,7 @@ nextId: 'quitter',
 
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">28 ans</div>',
 
-    input: selectField(['quitter','avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?']),
+    input: selectField(['quitter','avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?','Retourner aux réponses précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -182,6 +184,10 @@ nextId: 'quitter',
       {
         answer: 'êtes-vous fumeur ?',
         nextId: 'fumeur',
+      },
+      {
+        answer: 'Retourner aux réponses précédentes',
+        nextId: 'returnerGroupe1',
       },
       
       
@@ -198,7 +204,7 @@ nextId: 'quitter',
   },
   profession: {
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">serveur</div>',
-    input: selectField(['quitter','avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?']),
+    input: selectField(['quitter','avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?','Retourner aux réponses précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -211,6 +217,10 @@ nextId: 'quitter',
       {
         answer: 'êtes-vous fumeur ?',
         nextId: 'fumeur',
+      },
+      {
+        answer: 'Retourner aux réponses précédentes',
+        nextId: 'returnerGroupe1',
       },
       
       
@@ -227,7 +237,7 @@ nextId: 'quitter',
   antecedents: {
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
-    input: selectField(['quitter','avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?']),
+    input: selectField(['quitter','avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?','Retourner aux réponses précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -240,6 +250,10 @@ nextId: 'quitter',
       {
         answer: 'êtes-vous fumeur ?',
         nextId: 'fumeur',
+      },
+      {
+        answer: 'Retourner aux réponses précédentes',
+        nextId: 'returnerGroupe1',
       },
       
       
@@ -292,7 +306,7 @@ nextId: 'quitter',
 
 
 
-    input: selectField(['quitter','avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?']),
+    input: selectField(['quitter','avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?','Retourner aux réponses précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -305,6 +319,10 @@ nextId: 'quitter',
       {
         answer: 'êtes-vous fumeur ?',
         nextId: 'fumeur',
+      },
+      {
+        answer: 'Retourner aux réponses précédentes',
+        nextId: 'returnerGroupe1',
       },
       
       
@@ -321,30 +339,27 @@ nextId: 'quitter',
   MICI: {
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
+ 
 
     
-    answers:[
+    input: selectField(['quitter', 'êtes-vous fumeur ?']),
+    answers: [
+{
+answer: 'quitter',
+nextId: 'quitter',
+},
+
       {
-        nextId:'bot1'
-      }
-    ]
+        answer: 'êtes-vous fumeur ?',
+        nextId: 'fumeur',
+      },
+    
+      
+      
+      
 
 
+    ],
 
 
 
@@ -356,23 +371,6 @@ nextId: 'quitter',
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, je fume 1 paquet par jour depuis 10 ans</div>',
 
     
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
     
     answers:[
       {
@@ -449,11 +447,15 @@ nextId: 'quitter',
   },
 
 
+
+
+
+
   brutale: {
 
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non, petit à petit</div>',
 
-    input: selectField(['quitter','y-a-t-il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffrer cette douleur de 0 à 10 ?']),
+    input: selectField(['quitter','y-a-t-il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffrer cette douleur de 0 à 10 ?','Retourner aux réponses précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -471,6 +473,11 @@ nextId: 'quitter',
         answer: 'pouvez vous chiffrer cette douleur de 0 à 10 ?',
         nextId: 'ten',
       },
+      {
+        answer: 'Retourner aux réponses précédentes',
+        nextId: 'retournerGroupe3',
+      },
+      
 
     ],
 
@@ -483,7 +490,7 @@ nextId: 'quitter',
 
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">depuis 6 mois</div>',
 
-    input: selectField(['quitter','y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?']),
+    input: selectField(['quitter','y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?','Retourner aux réponses précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -500,6 +507,10 @@ nextId: 'quitter',
       {
         answer: 'pouvez vous chiffré cette douleur de 0 à 10 ?',
         nextId: 'ten',
+      },
+      {
+        answer: 'Retourner aux réponses précédentes',
+        nextId: 'retournerGroupe3',
       },
 
 
@@ -511,7 +522,7 @@ nextId: 'quitter',
   poussee: {
     
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, par poussée 2-3 mois</div>',
-    input: selectField(['quitter','y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?']),
+    input: selectField(['quitter','y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?','Retourner aux réponses précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -528,6 +539,10 @@ nextId: 'quitter',
       {
         answer: 'pouvez vous chiffré cette douleur de 0 à 10 ?',
         nextId: 'ten',
+      },
+      {
+        answer: 'Retourner aux réponses précédentes',
+        nextId: 'retournerGroupe3',
       },
 
 
@@ -540,7 +555,7 @@ nextId: 'quitter',
 
 
 
-    input: selectField(['quitter','y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?']),
+    input: selectField(['quitter','y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?','Retourner aux réponses précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -557,6 +572,10 @@ nextId: 'quitter',
       {
         answer: 'pouvez vous chiffré cette douleur de 0 à 10 ?',
         nextId: 'ten',
+      },
+      {
+        answer: 'Retourner aux réponses précédentes',
+        nextId: 'retournerGroupe3',
       },
 
 
@@ -684,7 +703,8 @@ nextId: 'quitter',
   inferieur: {
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
-    input: selectField(['quitter','est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?',  'Retourner aux réponses précédentes']),
+
+    input: selectField(['quitter','est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?','Retourner aux réponses précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -698,6 +718,10 @@ nextId: 'quitter',
       {
         answer: 'Avez-vous mal au niveau des fesses ?',
         nextId: 'fesses',
+      },
+      {
+        answer: 'Retourner aux réponses précédentes',
+        nextId: 'returnlist',
       },
       
       
@@ -709,10 +733,48 @@ nextId: 'quitter',
 
 
   },
+
+
+returnlist:{
+
+  botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold" hidden></div>',
+
+
+  input: selectField(['quitter','est ce que la douleur irradie au niveau du membre inférieur ?', 'quand sentez-vous cette douleur ?', 'vous vous sentez raide le matin ? Pendant combien de temps ?']),
+    answers: [
+{
+answer: 'quitter',
+nextId: 'quitter',
+},
+      {
+        answer: 'est ce que la douleur irradie au niveau du membre inférieur ?',
+        nextId: 'inferieur',
+      },
+      {
+        answer: 'quand sentez-vous cette douleur ?',
+        nextId: 'douleur',
+      },
+      {
+        answer: 'vous vous sentez raide le matin ? Pendant combien de temps ?',
+        nextId: 'temps',
+      },
+
+
+    ],
+},
+
+
+
+
+
+
+
+
+
   douleur: {
 
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">surtout la 2ème moitié de la nuit et elle est calmée lors de l’activité physique</div>',
-    input: selectField(['quitter','est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?', 'avez-vous mal au niveau des talons, surtout le matin au réveil ?']),
+    input: selectField(['quitter','est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?']),
     answers: [
 {
 answer: 'quitter',
@@ -726,9 +788,10 @@ nextId: 'quitter',
         answer: 'Avez-vous mal au niveau des fesses ?',
         nextId: 'fesses',
       },
+     
       {
-        answer: 'avez-vous mal au niveau des talons, surtout le matin au réveil ?',
-        nextId: 'reveil',
+        answer: 'Retourner aux réponses précédentes',
+        nextId: 'returnlist',
       },
 
 
@@ -741,13 +804,23 @@ nextId: 'quitter',
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, 1h</div>',
     
     
-    
+    input: selectField(['quitter','est ce que la douleur irradie au niveau du membre inférieur ?', 'quand sentez-vous cette douleur ?']),
+    answers: [
+{
+answer: 'quitter',
+nextId: 'quitter',
+},
+      {
+        answer: 'est ce que la douleur irradie au niveau du membre inférieur ?',
+        nextId: 'inferieur',
+      },
+      {
+        answer: 'quand sentez-vous cette douleur ?',
+        nextId: 'douleur',
+      },
 
-    
-    answers:[{
-      nextId:'bot1'
-    }]
 
+    ],
 
   },
   
@@ -757,7 +830,7 @@ nextId: 'quitter',
 
 
 
-    input: selectField(['quitter','est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?', 'avez-vous mal au niveau des talons, surtout le matin au réveil ?']),
+    input: selectField(['quitter','est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?','Retourner aux réponses précédentes', 'avez-vous mal au niveau des talons, surtout le matin au réveil ?', 'Retourner aux réponses précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -767,13 +840,14 @@ nextId: 'quitter',
         answer: 'est ce que cette douleur est impulsive à la toux ?',
         nextId: 'toux',
       },
-      {
-        answer: 'Avez-vous mal au niveau des fesses ?',
-        nextId: 'fesses',
-      },
+     
       {
         answer: 'avez-vous mal au niveau des talons, surtout le matin au réveil ?',
         nextId: 'reveil',
+      },
+      {
+        answer: 'Retourner aux réponses précédentes',
+        nextId: 'returnlist',
       },
 
 
@@ -796,6 +870,10 @@ nextId: 'quitter',
       {
         answer: 'avez-vous mal au niveau des talons, surtout le matin au réveil ?',
         nextId: 'reveil',
+      },
+       {
+        answer: 'Avez-vous mal au niveau des fesses ?',
+        nextId: 'fesses',
       },
       {
         answer: 'avez-vous présenté une tuméfaction d’un doigt ou d’un orteil en saucisse ?',
@@ -821,55 +899,88 @@ nextId: 'quitter',
 
     
     
+    input: selectField(['quitter','Avez-vous mal au niveau des fesses ?']),
+    answers: [
+{
+answer: 'quitter',
+nextId: 'quitter',
+},
+      
+       {
+        answer: 'Avez-vous mal au niveau des fesses ?',
+        nextId: 'fesses2',
+      },
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-    
-    answers:[{
-      nextId:'bot1'
-    }]
+    ],
 
 
 
 
   },
+
+fesses2:{
+  botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, des 2 côtés me réveillant la 2ème moitié de la nuit</div>',
+    
+    
+  answers: [
+{
+
+nextId: 'bot1',
+},
+    
+
+  
+  ],
+
+
+},
+
+toux2:{
+  botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',    
+    
+  answers: [
+{
+
+nextId: 'bot1',
+},
+    
+
+  
+  ],
+
+
+
+},
+
+
+
+
   fesses: {
 
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, des 2 côtés me réveillant la 2ème moitié de la nuit</div>',
     
     
+    input: selectField(['quitter','est ce que cette douleur est impulsive à la toux ?']),
+    answers: [
+{
+answer: 'quitter',
+nextId: 'quitter',
+},
+      
+{
+  answer: 'est ce que cette douleur est impulsive à la toux ?',
+  nextId: 'toux2',
+},
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-    
-    answers:[{
-      nextId:'bot1'
-    }]
+    ],
 
 
   },
+
+
+
+
+  
   reveil: {
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui</div>',
     input: selectField(['quitter','avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?']),
@@ -900,31 +1011,38 @@ nextId: 'quitter',
   
   
   retournerGroupe7: {
-        botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold" hidden></div>',
+    botPrompt: '<div style="height: auto;border-radius: 10px;color:white;font-weight: bold" hidden></div>',
 
 
 
-    input: selectField(['quitter','avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?']),
-    answers: [
+    input: selectField(['quitter','avez-vous mal au niveau des talons, surtout le matin au réveil ?','avez-vous présenté une tuméfaction d’un doigt ou d’un orteil en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?']),
+answers: [
 {
 answer: 'quitter',
 nextId: 'quitter',
 },
-      {
-        answer: 'avez-vous présenté une tuméfaction d’un doigts ou d’un orteils en saucisse ?',
-        nextId: 'saucisse',
-      },
-      {
-        answer: 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?',
-        nextId: 'periode',
-      },
-      {
-        answer: 'avez-vous de la fièvre ?',
-        nextId: 'fievre',
-      },
+  {
+    answer: 'avez-vous mal au niveau des talons, surtout le matin au réveil ?',
+    nextId: 'reveil',
+  },
+   {
+    answer: 'Avez-vous mal au niveau des fesses ?',
+    nextId: 'fesses',
+  },
+  {
+    answer: 'avez-vous présenté une tuméfaction d’un doigt ou d’un orteil en saucisse ?',
+    nextId: 'saucisse',
+  },
+  {
+    answer: 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?',
+    nextId: 'periode',
+  },
+  {
+    answer: 'avez-vous de la fièvre ?',
+    nextId: 'fievre',
+  },
 
-
-    ],
+],
 
 
 
@@ -932,7 +1050,7 @@ nextId: 'quitter',
 
   saucisse: {
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui</div>',
-    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?']),
+    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?','Retourner aux réponses précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -950,6 +1068,11 @@ nextId: 'quitter',
         answer: 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?',
         nextId: 'debutgr7',
       },
+      {
+        answer: 'Retourner aux réponses précédentes',
+        nextId: 'retournerGroupe7',
+      },
+      
 
 
     ],
@@ -961,7 +1084,7 @@ nextId: 'quitter',
   periode: {
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
-    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?']),
+    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?','Retourner aux réponses précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -978,6 +1101,10 @@ nextId: 'quitter',
       {
         answer: 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?',
         nextId: 'debutgr7',
+      },
+      {
+        answer: 'Retourner aux réponses précédentes',
+        nextId: 'retournerGroupe7',
       },
 
 
@@ -988,7 +1115,7 @@ nextId: 'quitter',
   fievre: {
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
-    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?']),
+    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?','Retourner aux réponses précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -1005,6 +1132,10 @@ nextId: 'quitter',
       {
         answer: 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?',
         nextId: 'debutgr7',
+      },
+      {
+        answer: 'Retourner aux réponses précédentes',
+        nextId: 'retournerGroupe7',
       },
  
 
@@ -1020,7 +1151,7 @@ nextId: 'quitter',
 
 
 
-    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?']),
+    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?','Retourner aux réponses précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -1037,6 +1168,10 @@ nextId: 'quitter',
       {
         answer: 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?',
         nextId: 'debutgr7',
+      },
+      {
+        answer: 'Retourner aux réponses précédentes',
+        nextId: 'retournerGroupe7',
       },
 
 
@@ -1172,7 +1307,7 @@ nextId: 'quitter',
   autres8: {
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
-    input: selectField(['quitter','fuite /rétention urinaire, incontinence anale, constipation, impuissance ?', 'avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?']),
+    input: selectField(['quitter','fuite /rétention urinaire, incontinence anale, constipation, impuissance ?', 'avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?','Avez-vous une fuite urinaire/une rétention urinaire, une incontinence anale, une constipation, une impuissance sexuelle ?']),
     answers: [
 {
 answer: 'quitter',
@@ -1193,6 +1328,11 @@ nextId: 'quitter',
         answer: 'avez-vous reçu un traitement ?',
         nextId: 'traitement9',
       },
+      {
+        answer: 'Avez-vous une fuite urinaire/une rétention urinaire, une incontinence anale, une constipation, une impuissance sexuelle ?',
+        nextId: 'sexuelle',
+      },
+
 
 
     ],
@@ -1202,7 +1342,7 @@ nextId: 'quitter',
   dysurie8: {
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
-    input: selectField(['quitter','fuite /rétention urinaire, incontinence anale, constipation, impuissance ?','avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?']),
+    input: selectField(['quitter','fuite /rétention urinaire, incontinence anale, constipation, impuissance ?','avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?','Avez-vous une fuite urinaire/une rétention urinaire, une incontinence anale, une constipation, une impuissance sexuelle ?']),
     answers: [
 {
 answer: 'quitter',
@@ -1223,6 +1363,11 @@ nextId: 'quitter',
         answer: 'avez-vous reçu un traitement ?',
         nextId: 'traitement9',
       },
+      {
+        answer: 'Avez-vous une fuite urinaire/une rétention urinaire, une incontinence anale, une constipation, une impuissance sexuelle ?',
+        nextId: 'sexuelle',
+      },
+
 
 
     ],
@@ -1230,6 +1375,39 @@ nextId: 'quitter',
 
   },
   visuel8: {
+    botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
+    input: selectField(['quitter','fuite /rétention urinaire, incontinence anale, constipation, impuissance ?', 'avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?','Avez-vous une fuite urinaire/une rétention urinaire, une incontinence anale, une constipation, une impuissance sexuelle ?']),
+    answers: [
+{
+answer: 'quitter',
+nextId: 'quitter',
+},
+      {
+        answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
+        nextId: 'impuissance10',
+      },
+
+
+      {
+        answer: 'avez-vous une diarrhée ?',
+        nextId: 'diarrhee9',
+      },
+      {
+        answer: 'avez-vous reçu un traitement ?',
+        nextId: 'traitement9',
+      },
+      {
+        answer: 'Avez-vous une fuite urinaire/une rétention urinaire, une incontinence anale, une constipation, une impuissance sexuelle ?',
+        nextId: 'sexuelle',
+      },
+
+
+    ],
+
+
+  },
+  sexuelle:{
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
     input: selectField(['quitter','fuite /rétention urinaire, incontinence anale, constipation, impuissance ?', 'avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?']),
@@ -1252,6 +1430,8 @@ nextId: 'quitter',
         answer: 'avez-vous reçu un traitement ?',
         nextId: 'traitement9',
       },
+      
+    
 
 
     ],
@@ -1265,7 +1445,7 @@ nextId: 'quitter',
 
 
 
-    input: selectField(['quitter','fuite /rétention urinaire, incontinence anale, constipation, impuissance ?','avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?']),
+    input: selectField(['quitter','fuite /rétention urinaire, incontinence anale, constipation, impuissance ?','avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?','Avez-vous une fuite urinaire/une rétention urinaire, une incontinence anale, une constipation, une impuissance sexuelle ?']),
     answers: [
 {
 answer: 'quitter',
@@ -1283,6 +1463,10 @@ nextId: 'quitter',
       {
         answer: 'avez-vous reçu un traitement ?',
         nextId: 'traitement9',
+      },
+      {
+        answer: 'Avez-vous une fuite urinaire/une rétention urinaire, une incontinence anale, une constipation, une impuissance sexuelle ?',
+        nextId: 'sexuelle',
       },
 
 
@@ -1310,18 +1494,112 @@ nextId: 'quitter',
 
 
   },
+  diarrhee99:{
+    botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
+    input: selectField(['quitter', 'avez-vous reçu un traitement ?']),
+    answers: [
+{
+answer: 'quitter',
+nextId: 'quitter',
+},
+      {
+        answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
+        nextId: 'impuissance101',
+      },
+
+
+
+    
+      {
+        answer: 'avez-vous reçu un traitement ?',
+        nextId: 'traitement9',
+      },
+      {
+        answer: 'Avez-vous une fuite urinaire/une rétention urinaire, une incontinence anale, une constipation, une impuissance sexuelle ?',
+        nextId: 'sexuelle',
+      },
+
+    ],
+
+
+
+  },
 
 
   //GROUPE 1
   diarrhee9: {
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
-    answers:[{
-      nextId:'conclusionboot2'
-    }]
+    input: selectField(['quitter','fuite /rétention urinaire, incontinence anale, constipation, impuissance ?']),
+    answers: [
+{
+answer: 'quitter',
+nextId: 'quitter',
+},
+      {
+        answer: 'fuite /rétention urinaire, incontinence anale, constipation, impuissance ?',
+        nextId: 'impuissance101',
+      },
+
+
+
+    
+      {
+        answer: 'avez-vous reçu un traitement ?',
+        nextId: 'traitement9',
+      },
+      {
+        answer: 'Avez-vous une fuite urinaire/une rétention urinaire, une incontinence anale, une constipation, une impuissance sexuelle ?',
+        nextId: 'sexuelle',
+      },
+
+
+    ],
 
 
   },
+
+  impuissance101:{
+    botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
+
+    input: selectField(['quitter', 'avez-vous reçu un traitement ?']),
+    answers: [
+{
+answer: 'quitter',
+nextId: 'quitter',
+},
+     
+    
+      {
+        answer: 'avez-vous reçu un traitement ?',
+        nextId: 'traitement9',
+      },
+      {
+        answer: 'Avez-vous une fuite urinaire/une rétention urinaire, une incontinence anale, une constipation, une impuissance sexuelle ?',
+        nextId: 'sexuelle',
+      },
+
+
+
+
+
+
+
+    ],
+
+
+  },
+
+
+
+
+
+
+
+
+
+
   traitement9: {
 
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, des anti stéroïdiens de synthèse, avec une nette amélioration</div>',
@@ -1435,9 +1713,31 @@ nextId: 'quitter',
   impuissance10: {
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
-    answers:[{
-      nextId:'conclusionboot2'
-    }]
+    input: selectField(['quitter', 'avez-vous une diarrhée ?', 'avez-vous reçu un traitement ?']),
+    answers: [
+{
+answer: 'quitter',
+nextId: 'quitter',
+},
+     
+
+
+
+      {
+        answer: 'avez-vous une diarrhée ?',
+        nextId: 'diarrhee99',
+      },
+      {
+        answer: 'avez-vous reçu un traitement ?',
+        nextId: 'traitement9',
+      },
+      {
+        answer: 'Avez-vous une fuite urinaire/une rétention urinaire, une incontinence anale, une constipation, une impuissance sexuelle ?',
+        nextId: 'sexuelle',
+      },
+
+
+    ],
 
 
 
