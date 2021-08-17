@@ -171,7 +171,7 @@ nextId: 'quitter',
 
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">28 ans</div>',
 
-    input: selectField(['quitter','avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?','Retourner aux réponses précédentes']),
+    input: selectField(['quitter','avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?','Retour aux questions précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -186,7 +186,7 @@ nextId: 'quitter',
         nextId: 'fumeur',
       },
       {
-        answer: 'Retourner aux réponses précédentes',
+        answer: 'Retour aux questions précédentes',
         nextId: 'returnerGroupe1',
       },
       
@@ -204,7 +204,7 @@ nextId: 'quitter',
   },
   profession: {
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">serveur</div>',
-    input: selectField(['quitter','avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?','Retourner aux réponses précédentes']),
+    input: selectField(['quitter','avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?','Retour aux questions précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -219,7 +219,7 @@ nextId: 'quitter',
         nextId: 'fumeur',
       },
       {
-        answer: 'Retourner aux réponses précédentes',
+        answer: 'Retour aux questions précédentes',
         nextId: 'returnerGroupe1',
       },
       
@@ -237,7 +237,7 @@ nextId: 'quitter',
   antecedents: {
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
-    input: selectField(['quitter','avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?','Retourner aux réponses précédentes']),
+    input: selectField(['quitter','avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?','Retour aux questions précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -252,7 +252,7 @@ nextId: 'quitter',
         nextId: 'fumeur',
       },
       {
-        answer: 'Retourner aux réponses précédentes',
+        answer: 'Retour aux questions précédentes',
         nextId: 'returnerGroupe1',
       },
       
@@ -306,7 +306,7 @@ nextId: 'quitter',
 
 
 
-    input: selectField(['quitter','avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?','Retourner aux réponses précédentes']),
+    input: selectField(['quitter','avez-vous des antécédents personnels de néoplasie, infection, psoriasis, MICI ?', 'êtes-vous fumeur ?','Retour aux questions précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -321,7 +321,7 @@ nextId: 'quitter',
         nextId: 'fumeur',
       },
       {
-        answer: 'Retourner aux réponses précédentes',
+        answer: 'Retour aux questions précédentes',
         nextId: 'returnerGroupe1',
       },
       
@@ -455,7 +455,7 @@ nextId: 'quitter',
 
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non, petit à petit</div>',
 
-    input: selectField(['quitter','y-a-t-il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffrer cette douleur de 0 à 10 ?','Retourner aux réponses précédentes']),
+    input: selectField(['quitter','y-a-t-il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffrer cette douleur de 0 à 10 ?','Retour aux questions précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -474,7 +474,7 @@ nextId: 'quitter',
         nextId: 'ten',
       },
       {
-        answer: 'Retourner aux réponses précédentes',
+        answer: 'Retour aux questions précédentes',
         nextId: 'retournerGroupe3',
       },
       
@@ -490,7 +490,7 @@ nextId: 'quitter',
 
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">depuis 6 mois</div>',
 
-    input: selectField(['quitter','y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?','Retourner aux réponses précédentes']),
+    input: selectField(['quitter','y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?','Retour aux questions précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -509,7 +509,7 @@ nextId: 'quitter',
         nextId: 'ten',
       },
       {
-        answer: 'Retourner aux réponses précédentes',
+        answer: 'Retour aux questions précédentes',
         nextId: 'retournerGroupe3',
       },
 
@@ -522,7 +522,7 @@ nextId: 'quitter',
   poussee: {
     
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, par poussée 2-3 mois</div>',
-    input: selectField(['quitter','y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?','Retourner aux réponses précédentes']),
+    input: selectField(['quitter','y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?','Retour aux questions précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -541,7 +541,7 @@ nextId: 'quitter',
         nextId: 'ten',
       },
       {
-        answer: 'Retourner aux réponses précédentes',
+        answer: 'Retour aux questions précédentes',
         nextId: 'retournerGroupe3',
       },
 
@@ -555,7 +555,7 @@ nextId: 'quitter',
 
 
 
-    input: selectField(['quitter','y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?','Retourner aux réponses précédentes']),
+    input: selectField(['quitter','y at il un facteur déclenchant (traumatisme, faux mouvement, port de charge lourde) ?', 'comment est la douleur ? à type de crampes ou de fourmillements ?', 'pouvez vous chiffré cette douleur de 0 à 10 ?','Retour aux questions précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -574,7 +574,7 @@ nextId: 'quitter',
         nextId: 'ten',
       },
       {
-        answer: 'Retourner aux réponses précédentes',
+        answer: 'Retour aux questions précédentes',
         nextId: 'retournerGroupe3',
       },
 
@@ -704,7 +704,7 @@ nextId: 'quitter',
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
 
-    input: selectField(['quitter','est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?','Retourner aux réponses précédentes']),
+    input: selectField(['quitter','est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?','Retour aux questions précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -720,7 +720,7 @@ nextId: 'quitter',
         nextId: 'fesses',
       },
       {
-        answer: 'Retourner aux réponses précédentes',
+        answer: 'Retour aux questions précédentes',
         nextId: 'returnlist',
       },
       
@@ -790,7 +790,7 @@ nextId: 'quitter',
       },
      
       {
-        answer: 'Retourner aux réponses précédentes',
+        answer: 'Retour aux questions précédentes',
         nextId: 'returnlist',
       },
 
@@ -830,7 +830,7 @@ nextId: 'quitter',
 
 
 
-    input: selectField(['quitter','est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?','Retourner aux réponses précédentes', 'avez-vous mal au niveau des talons, surtout le matin au réveil ?', 'Retourner aux réponses précédentes']),
+    input: selectField(['quitter','est ce que cette douleur est impulsive à la toux ?', 'Avez-vous mal au niveau des fesses ?','Retour aux questions précédentes', 'avez-vous mal au niveau des talons, surtout le matin au réveil ?', 'Retour aux questions précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -846,7 +846,7 @@ nextId: 'quitter',
         nextId: 'reveil',
       },
       {
-        answer: 'Retourner aux réponses précédentes',
+        answer: 'Retour aux questions précédentes',
         nextId: 'returnlist',
       },
 
@@ -898,7 +898,7 @@ nextId: 'quitter',
   },
   fesses123:{
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, des 2 côtés me réveillant la 2ème moitié de la nuit</div>',
-    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?','Retourner aux réponses précédentes']),
+    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?','Retour aux questions précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -917,7 +917,7 @@ nextId: 'quitter',
         nextId: 'debutgr7',
       },
       {
-        answer: 'Retourner aux réponses précédentes',
+        answer: 'Retour aux questions précédentes',
         nextId: 'groupe3boot',
       },
 
@@ -1083,7 +1083,7 @@ nextId: 'quitter',
 
   saucisse: {
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui</div>',
-    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?','Retourner aux réponses précédentes']),
+    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?','Retour aux questions précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -1102,7 +1102,7 @@ nextId: 'quitter',
         nextId: 'debutgr7',
       },
       {
-        answer: 'Retourner aux réponses précédentes',
+        answer: 'Retour aux questions précédentes',
         nextId: 'groupe3boot',
       },
       
@@ -1117,7 +1117,7 @@ nextId: 'quitter',
   periode: {
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
-    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?','Retourner aux réponses précédentes']),
+    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?','Retour aux questions précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -1136,7 +1136,7 @@ nextId: 'quitter',
         nextId: 'debutgr7',
       },
       {
-        answer: 'Retourner aux réponses précédentes',
+        answer: 'Retour aux questions précédentes',
         nextId: 'groupe3boot',
       },
 
@@ -1148,7 +1148,7 @@ nextId: 'quitter',
   fievre: {
     botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">non</div>',
 
-    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?','Retourner aux réponses précédentes']),
+    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?','Retour aux questions précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -1167,7 +1167,7 @@ nextId: 'quitter',
         nextId: 'debutgr7',
       },
       {
-        answer: 'Retourner aux réponses précédentes',
+        answer: 'Retour aux questions précédentes',
         nextId: 'groupe3boot',
       },
  
@@ -1184,7 +1184,7 @@ nextId: 'quitter',
 
 
 
-    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?','Retourner aux réponses précédentes']),
+    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?','Retour aux questions précédentes']),
     answers: [
 {
 answer: 'quitter',
@@ -1203,7 +1203,7 @@ nextId: 'quitter',
         nextId: 'debutgr7',
       },
       {
-        answer: 'Retourner aux réponses précédentes',
+        answer: 'Retour aux questions précédentes',
         nextId: 'groupe3boot',
       },
 
