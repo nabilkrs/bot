@@ -861,11 +861,15 @@ nextId: 'quitter',
 
 
 
-        input: selectField(['quitter','avez-vous mal au niveau des talons, surtout le matin au réveil ?','avez-vous présenté une tuméfaction d’un doigt ou d’un orteil en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?']),
+        input: selectField(['quitter','Avez-vous mal au niveau des fesses ?','avez-vous mal au niveau des talons, surtout le matin au réveil ?','avez-vous présenté une tuméfaction d’un doigt ou d’un orteil en saucisse ?', 'sentez vous une asthénie ou une perte de l’appétit pendant cette période ?', 'avez-vous de la fièvre ?']),
     answers: [
 {
 answer: 'quitter',
 nextId: 'quitter',
+},
+{
+  answer: 'Avez-vous mal au niveau des fesses ?',
+  nextId: 'fesses123',
 },
       {
         answer: 'avez-vous mal au niveau des talons, surtout le matin au réveil ?',
@@ -890,6 +894,35 @@ nextId: 'quitter',
 
     ],
 
+
+  },
+  fesses123:{
+    botPrompt: '<div style="height:auto;background-color:rgba(220, 42, 35, 0.1);border-radius: 10px;color:rgba(0, 0, 0,0.7)">oui, des 2 côtés me réveillant la 2ème moitié de la nuit</div>',
+    input: selectField(['quitter','sentez vous des douleurs articulaires ou musculaires associées ?', 'avez-vous des sueurs nocturnes ?', 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?','Retourner aux réponses précédentes']),
+    answers: [
+{
+answer: 'quitter',
+nextId: 'quitter',
+},
+      {
+        answer: 'sentez vous des douleurs articulaires ou musculaires associées ?',
+        nextId: 'associeesgr7',
+      },
+      {
+        answer: 'avez-vous des sueurs nocturnes ?',
+        nextId: 'nocturnesgr7',
+      },
+      {
+        answer: 'avez-vous présenté une infection récente (urétrite, diarrhée 1 mois avant le début) ?',
+        nextId: 'debutgr7',
+      },
+      {
+        answer: 'Retourner aux réponses précédentes',
+        nextId: 'groupe3boot',
+      },
+
+
+    ],
 
   },
 
@@ -1070,7 +1103,7 @@ nextId: 'quitter',
       },
       {
         answer: 'Retourner aux réponses précédentes',
-        nextId: 'retournerGroupe7',
+        nextId: 'groupe3boot',
       },
       
 
@@ -1104,7 +1137,7 @@ nextId: 'quitter',
       },
       {
         answer: 'Retourner aux réponses précédentes',
-        nextId: 'retournerGroupe7',
+        nextId: 'groupe3boot',
       },
 
 
@@ -1135,7 +1168,7 @@ nextId: 'quitter',
       },
       {
         answer: 'Retourner aux réponses précédentes',
-        nextId: 'retournerGroupe7',
+        nextId: 'groupe3boot',
       },
  
 
@@ -1171,7 +1204,7 @@ nextId: 'quitter',
       },
       {
         answer: 'Retourner aux réponses précédentes',
-        nextId: 'retournerGroupe7',
+        nextId: 'groupe3boot',
       },
 
 
